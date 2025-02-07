@@ -1,10 +1,16 @@
 # Learning Based Lower Limb Joint Kinematic Estimation Using Open Source IMU Data
 
-**Authors**: Benjamin Hur, Sunin Baek, Inseung Kang*, and Daekyum Kim*
- 
+This is the repository that contains source code for the [LLJKE website](https://mintlabkorea.github.io/LLJKE/).
 
+If you are to cite this,:
+```
+@article{hur2025LLJKE,
+  author    = {Hur, Benjamin and Baek, Sunin and Inseung, Kang and Kim, Daekyum},
+  title     = {Learning Based Lower Limb Joint Kinematic Estimation Using Open Source IMU Data},
+  journal   = {Scientific Reports},
+  year      = {2025},
+}
+```
 
-
-## Abstract
-This study introduces a deep learning framework for estimating lower-limb joint kinematics using inertial measurement units (IMUs). While deep learning methods avoid sensor drift, extensive calibration, and complex setup procedures, they require substantial data. To meet this demand, we leveraged an open-source dataset to develop and evaluate three training approaches. The first involved training a model exclusively on data from a single user, resulting in high accuracy for that individual only. The
-second approach trained a model on data from multiple users to generalize across individuals; however, demonstrated lower accuracy due to variations in gait patterns across users. The third approach added transfer learning to the second, improving estimation accuracy for new users through fine-tuning with a small portion of their data. This model overcame the limitations of the previous methods’ dependency on extensive data collection, and achieved comparable performance to inverse kinematics, making it an effective solution for diverse populations. Additionally, our analysis on IMU combinations suggests that IMUs placed on the femur and calcaneus are the best for most cases. This framework not only reduces the need for extensive data collection but also enhances personalized gait analysis, enabling more efficient and accessible applications in both clinical assessments and real-world environments for broader use.
+# Website License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

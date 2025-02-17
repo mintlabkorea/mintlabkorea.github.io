@@ -157,3 +157,22 @@
   'GRAD' 0,
   'opsz' 24
 }
+
+@media (max-width: 768px) { /* Adjust breakpoint if needed */
+    .top-bar-side .dropdown > a { 
+        display: none; /* Hide "Members" on mobile */
+    }
+
+    .top-bar-side .dropdown-content {
+        display: block !important; /* Ensure sub-items are always visible */
+        position: relative; /* Remove dropdown hover effect */
+        background: none; /* Match background */
+        box-shadow: none; /* Remove unnecessary styles */
+    }
+
+    .top-bar-side .dropdown-content a {
+        padding: 10px 15px; /* Keep consistent padding */
+        display: block; /* Make them full-width */
+    }
+}
+

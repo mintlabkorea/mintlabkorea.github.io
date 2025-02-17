@@ -992,7 +992,7 @@ body {
 
 /* Style journal names in red */
 .journal-name {
-    color: red; /* Makes journal names red */
+    /*color: red;  Makes journal names red */
     font-style: italic; /* Keeps the italic formatting */
 }
 

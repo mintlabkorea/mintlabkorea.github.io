@@ -27,7 +27,9 @@ function resizeEvent() {
             if (dropdownContent) {
                 let subItems = dropdownContent.children;
                 for (let i = 0; i < subItems.length; i++) {
-                    topBarSide.appendChild(subItems[i].cloneNode(true)); // Add sub-items to mobile menu
+                    let newItem = subItems[i].cloneNode(true);
+                    newItem.classList.remove("dropdown-content"); // Remove dropdown-specific styles
+                    topBarSide.appendChild(newItem);
                 }
             }
             item.remove(); // Remove "Members"

@@ -1004,22 +1004,6 @@ body {
 
 
 
-.members-professor {
-    display: flex;
-    flex-direction: row; /* Aligns image and text side by side */
-    align-items: center; /* Centers items vertically */
-    gap: 20px; /* Adds space between image and text */
-}
-
-.members-professor-img {
-    flex-shrink: 0; /* Prevents image from shrinking */
-    width: 250px; /* Adjust width to fit layout */
-}
-
-.members-professor-description {
-    flex-grow: 1; /* Allows text to take remaining space */
-    text-align: left; /* Ensures text aligns properly */
-}
 
 
 

@@ -793,8 +793,8 @@ body {
 
 @media all and (max-width:480px) {
     .home-map-container{
-        --width: 300px;
-        --height: 165px
+        width: 100%;
+        height: auto; 
     }
     .home-title{
         width: 300px;
@@ -803,7 +803,7 @@ body {
         margin-bottom: 40px;    
     }
     .home-container{
-        height: 500px;
+        height: auto;
     }
     .card-container-title{
         margin: 50px 0 10px;
@@ -838,6 +838,7 @@ body {
     
     .professor-professor-description{
         text-align: left;
+        width: 100%;
     }
     .members-img{
         width: 180px;

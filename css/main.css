@@ -1003,30 +1003,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    .members-professor {
-        display: flex !important;
-        flex-direction: column !important; /* Stack items */
-        align-items: center !important; /* Center items */
-        justify-content: center !important;
-        text-align: center !important;
-        gap: 20px !important; /* Add spacing between image & text */
-        width: 100% !important;
-    }
 
-    .members-professor-img {
-        width: 90% !important; /* Make the image responsive */
-        max-width: 300px !important; /* Prevent the image from becoming too large */
-        display: block !important;
-        margin: 0 auto !important; /* Center the image */
-    }
-
-    .members-professor-description {
-        width: 90% !important; /* Prevent text from stretching */
-        text-align: center !important; /* Center text */
-        margin-top: 10px !important; /* Ensure spacing between image and text */
-    }
-}
 
 
 

@@ -20,8 +20,9 @@ function resizeEvent() {
         if(document.querySelector('.top-bar-nav-item')){
             deletedItem.push(topBarNav.firstElementChild);
             deletedGap.push(topBarNav.firstElementChild.offsetWidth);
-            topBarSide.insertBefore(topBarNav.firstElementChild, topBarSide.firstChild);
+            // topBarSide.insertBefore(topBarNav.firstElementChild, topBarSide.firstChild);
             // topBarNav.removeChild(topBarNav.firstElementChild);
+            topBarSide.appendChild(topBarNav.firstElementChild);
         }
     }
     

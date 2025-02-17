@@ -1,11 +1,7 @@
 $(document).ready(function(){
-
-    let pathPrefix = window.location.pathname.includes("/pages/") ? "../" : "./";
-
-    $("#header").load(pathPrefix + "header.html", function(){
-        $.getScript(pathPrefix + "js/nav.js");
-        $.getScript(pathPrefix + "js/scroll.js");
+    $("#header").load("./header.html",function(){
+        $.getScript("./js/nav.js");
+        $.getScript("./js/scroll.js");
     });
-
-    $("#footer").load(pathPrefix + "footer.html");
+    $("#footer").load("./footer.html");
 });

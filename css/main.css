@@ -949,3 +949,42 @@ body {
 .top-bar-nav-item.dropdown:hover .dropdown-content {
   display: block;       /* Show on hover */
 }
+
+/* Lay out photo on left, text on right */
+.members-professor {
+  display: flex;
+  align-items: flex-start;  /* align tops */
+  gap: 40px;               /* space between photo and text */
+  margin: 40px 0;          /* vertical spacing above/below */
+}
+
+.members-professor-img {
+  flex-shrink: 0;          /* don’t shrink the image if window is narrow */
+}
+
+.members-professor-img img {
+  max-width: 300px;        /* pick a size you like */
+  height: auto;
+  display: block;          /* remove default inline spacing */
+  border-radius: 4px;      /* optional corner rounding */
+}
+
+.members-professor-description {
+  max-width: 600px;        /* limit text width */
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* OPTIONAL: fix the HTML “<ur>” => “<ul>” for lists 
+   so bullets display correctly: */
+
+.members-professor-description ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.members-professor-description li {
+  margin-bottom: 0.5em;
+}

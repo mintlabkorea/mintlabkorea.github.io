@@ -26,7 +26,9 @@ function resizeEvent() {
     }
     
     while(deletedItem.length > 0 && window.innerWidth - logo.offsetWidth - topBarNav.offsetWidth > navGap + gap + deletedGap[deletedGap.length-1]){
-        topBarNav.insertBefore(topBarSide.firstElementChild, topBarNav.firstChild);
+        // topBarNav.insertBefore(topBarSide.firstElementChild, topBarNav.firstChild);
+        topBarSide.appendChild(topBarNav.firstElementChild);
+
         // topBarSide.removeChild(topBarSide.firstElementChild);
         deletedItem.pop();
         deletedGap.pop();

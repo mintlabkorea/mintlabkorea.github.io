@@ -1,57 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            height: 100vh;
-            padding-top: 50px;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            background: white;
-            padding: 20px;
-            box-sizing: border-box;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Publications</h1>
-        <ul>
-            <li><a href="https://mintlabkorea.github.io/LLJKE">Hur, Benjamin, et al. (2025) Learning Based Lower Limb Joint Kinematic Estimation Using Open Source IMU Data, <i>Scientific Reports</i></a></li>
-            <!--<li><a href="{link}">{author} {(year)} {title}, <i>{journal/conference}</i></a></li>-->
-        </ul>
-    </div>
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mint Lab Home</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=stat_minus_1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" /> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./js/load.js"></script>
+    </head>
+    <body>
+        <div id="header"></div>
+
+        <div class="home-container">
+            <div class="home-title">
+                <span>M</span>ovement <span>Int</span>elligence Laboratory
+            </div>
+            <div class="home-map-container">
+                <div class="left-container-wrap">
+                    <a href = "./pages/research.html#intentions">
+                    <div class="left-container">
+                        <div class="left-container-img hidden">
+                            <img src="./images/home_left.png">
+                        </div>
+                        <div class="left-container-text">
+                            <b>Digital healthcare platforms</b><br>description text Lorem ipsum dolor sit amet 
+                        </div>
+                        <div class="left-container-label">
+                            <div class="left-container-label-text">Intentions</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="bottom-container-wrap">
+                    <a href = "./pages/research.html#kinematics">
+                    <div class="bottom-container">
+                        <div class="bottom-container-img hidden">
+                            <img src="./images/home_bottom.png">
+                        </div>
+                        <div class="bottom-container-text">
+                            <b>Mobile/Service Robots</b><br>description text Lorem ipsum dolor sit amet 
+                        </div>
+                        <div class="bottom-container-label">
+                            <div class="bottom-container-label-text">Kinematics, Kinetics</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="right-container-wrap">
+                    <a href = "./pages/research.html#actions">
+                    <div class="right-container">
+                        <div class="right-container-img hidden">
+                            <img src="./images/home_right.png">
+                        </div>
+                        <div class="right-container-text">
+                            <b>Wearable Robots</b><br>description text Lorem ipsum dolor sit amet 
+                        </div>
+                        <div class="right-container-label">
+                            <div class="right-container-label-text">Actions, Activities</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="top-container-wrap">
+                    <div class="top-container">Human-Centered Robotic Intelligence</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="home-container" style="background-color:whitesmoke">
+            <div class="home-title card-container-title"><span>C</span>ard</div>
+            <div class="home-map-container card-container">
+                <div class="card-section-side">
+                    <button>
+                        <span class="material-symbols-outlined">
+                        chevron_left
+                        </span>
+                    </button>
+                </div>
+                <div class="card-section">
+                    <div class="top">
+                        <div class="card">
+                            <img src="./images/card1.jpg" alt="image of card1">
+                            <div class="description">
+                                This is Card element test description
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/card2.jpg" alt="image of card1">
+                            <div class="description">
+                                This is Card element test description
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/card3.jpg" alt="image of card1">
+                            <div class="description">
+                                This is Card element test description
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/card4.jpg" alt="image of card1">
+                            <div class="description">
+                                This is Card element test description
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/card5.jpg" alt="image of card1">
+                            <div class="description">
+                                This is Card element test description
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/card6.jpg" alt="image of card1">
+                            <div class="description">
+                                This is Card element test description
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+                <div class="card-section-side">
+                    <button>
+                        <span class="material-symbols-outlined">
+                        chevron_right
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+    <script src="./js/main.js"></script>
+    <script src="./js/card.js"></script>
 </html>

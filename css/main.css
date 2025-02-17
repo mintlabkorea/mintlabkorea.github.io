@@ -910,4 +910,8 @@ body {
         transform: translateX(115px) translateY(122px);
         font-size:6px;
     }
+
+    .top-bar-nav-item:last-child {
+    margin-right: 20px;
+    }
 }

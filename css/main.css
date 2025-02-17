@@ -1003,28 +1003,32 @@ body {
 }
 
 
-
 @media (max-width: 768px) {
     .members-professor {
         display: flex !important;
-        flex-direction: column !important; /* Stack image above text */
+        flex-direction: column !important; /* Stack items */
         align-items: center !important; /* Center items */
-        text-align: center !important; /* Ensure text is centered */
+        justify-content: center !important;
+        text-align: center !important;
+        gap: 20px !important; /* Add spacing between image & text */
+        width: 100% !important;
     }
 
     .members-professor-img {
-        width: 100% !important; /* Make the image responsive */
-        max-width: 250px !important; /* Prevent it from being too big */
-        margin: 0 auto !important; /* Center the image */
+        width: 90% !important; /* Make the image responsive */
+        max-width: 300px !important; /* Prevent the image from becoming too large */
         display: block !important;
+        margin: 0 auto !important; /* Center the image */
     }
 
     .members-professor-description {
-        margin-top: 15px !important; /* Add spacing so text does not overlap */
-        width: 90% !important; /* Ensure text does not expand beyond container */
-        text-align: center !important; /* Keep text centered */
+        width: 90% !important; /* Prevent text from stretching */
+        text-align: center !important; /* Center text */
+        margin-top: 10px !important; /* Ensure spacing between image and text */
     }
 }
+
+
 
 
 

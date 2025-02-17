@@ -1,7 +1,11 @@
 $(document).ready(function(){
-    $("#header").load("./header.html",function(){
-        $.getScript("./js/nav.js");
-        $.getScript("./js/scroll.js");
+
+    let pathPrefix = window.location.pathname.includes("/pages/") ? "../" : "./";
+
+    $("#header").load(pathPrefix + "header.html", function(){
+        $.getScript(pathPrefix + "js/nav.js");
+        $.getScript(pathPrefix + "js/scroll.js");
     });
-    $("#footer").load("./footer.html");
+
+    $("#footer").load(pathPrefix + "footer.html");
 });

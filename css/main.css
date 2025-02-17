@@ -913,36 +913,37 @@ body {
 
 
     
-    .top-bar-nav-item.dropdown {
-      position: relative; /* So the submenu can be absolutely positioned underneath */
-    }
     
-    .top-bar-nav-item.dropdown .dropdown-content {
-      display: none;
-      position: absolute;
-      top: 100%;      /* Place it directly below the parent link */
-      left: 0;
-      background-color: #fff;
-      min-width: 120px; 
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-      z-index: 999;   /* Ensure it appears above other elements */
-    }
-    
-    .top-bar-nav-item.dropdown .dropdown-content a {
-      display: block;
-      padding: 8px 12px;
-      text-decoration: none;
-      color: #333;
-    }
-    
-    .top-bar-nav-item.dropdown .dropdown-content a:hover {
-      background-color: #f5f5f5;
-    }
-    
-    /* Show/hide the submenu on hover */
-    .top-bar-nav-item.dropdown:hover .dropdown-content {
-      display: block;
-    }
 
 
+}
+
+.top-bar-nav-item.dropdown {
+  position: relative; /* So .dropdown-content can position absolutely */
+}
+
+.top-bar-nav-item.dropdown .dropdown-content {
+  display: none;        /* Hidden by default */
+  position: absolute;
+  top: 100%;            /* Directly below the parent link */
+  left: 0;
+  background-color: #fff;
+  min-width: 120px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 999;         /* Sits above other elements */
+}
+
+.top-bar-nav-item.dropdown .dropdown-content a {
+  display: block;       /* Stack each submenu link vertically */
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.top-bar-nav-item.dropdown .dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+.top-bar-nav-item.dropdown:hover .dropdown-content {
+  display: block;       /* Show on hover */
 }

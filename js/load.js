@@ -4,4 +4,4 @@ $(document).ready(function(){
         $.getScript("./js/scroll.js");
     });
     $("#footer").load("./footer.html");
-});
+}); 

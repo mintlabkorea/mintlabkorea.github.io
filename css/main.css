@@ -1010,16 +1010,29 @@ body {
 
 
 
-
-@media (max-width: 768px) {
-  /* 아래 네 가지 모두 숨겨보기 */
-  .left-container,
-  .right-container,
-  .bottom-container,
-  .top-container {
-    display: none !important;
-  }
+/** 
+ * 교수 페이지 전용 오버라이드 
+ * (main.css 가장 마지막에 추가)
+ */
+.professor-page .home-map-container {
+  /* 모바일/PC 구분 없이, 교수 페이지에서는 가변 폭/높이 */
+  width: 100% !important;
+  height: auto !important;
+  overflow: visible !important; /* hidden이 문제라면 보이게 */
 }
 
+/* 교수 페이지에서 고정 높이 대신 auto */
+.professor-page .home-container {
+  height: auto !important;
+  /* 필요하면 min-height: 900px; 추가 가능 */
+}
 
+/* 만약 교수 페이지에서 도형(absolute .left-container 등) 
+   전혀 안 쓰고 싶다면 숨기기 */
+.professor-page .left-container,
+.professor-page .right-container,
+.professor-page .bottom-container,
+.professor-page .top-container {
+  display: none !important;
+}
 

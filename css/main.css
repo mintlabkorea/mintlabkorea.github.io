@@ -464,7 +464,7 @@ body {
 
 .member-container {
   /* Make each student row have a black “bar” on top */
-  border-top: 30px solid black;  
+  border-top: 5px solid black;  
   /* White background for the row */
   background-color: #fff;  
   display: flex;               

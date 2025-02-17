@@ -1006,25 +1006,25 @@ body {
 
 @media (max-width: 768px) {
     .members-professor {
-        display: flex !important; /* Ensure it's a flex container */
-        flex-direction: column !important; /* Stack image and text vertically */
-        align-items: center !important; /* Center the content */
+        display: flex !important;
+        flex-direction: column !important; /* Stack image above text */
+        align-items: center !important; /* Center items */
         text-align: center !important; /* Ensure text is centered */
     }
 
     .members-professor-img {
         width: 100% !important; /* Make the image responsive */
-        max-width: 300px !important; /* Prevent it from being too big */
+        max-width: 250px !important; /* Prevent it from being too big */
         margin: 0 auto !important; /* Center the image */
+        display: block !important;
     }
 
     .members-professor-description {
         margin-top: 15px !important; /* Add spacing so text does not overlap */
         width: 90% !important; /* Ensure text does not expand beyond container */
-        text-align: center !important; /* Make sure text stays centered */
+        text-align: center !important; /* Keep text centered */
     }
 }
-
 
 
 

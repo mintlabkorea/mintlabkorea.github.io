@@ -28,8 +28,10 @@ function resizeEvent() {
                 let subItems = dropdownContent.children;
                 for (let i = 0; i < subItems.length; i++) {
                     let newItem = subItems[i].cloneNode(true);
-                    newItem.classList.remove("dropdown-content"); // Remove dropdown-specific styles
+                    newItem.style.padding = "12px 20px"; // Ensure spacing matches
+                    newItem.style.display = "block"; // Keep alignment consistent
                     topBarSide.appendChild(newItem);
+
                 }
             }
             item.remove(); // Remove "Members"

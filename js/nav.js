@@ -20,9 +20,17 @@ function resizeEvent() {
         let item = topBarNav.firstElementChild;
         let itemText = item.querySelector('a') ? item.querySelector('a').innerText.trim() : "";
 
-        // Exclude "Members" from being moved to mobile menu
+        // Remove "Members" but keep "Professor" & "Students" in mobile
         if (window.innerWidth <= 768 && itemText === 'Members') {
-            item.remove(); // Hide "Members" in mobile
+            let dropdownContent = item.querySelector('.dropdown-content'); // Get Professor & Students
+
+            if (dropdownContent) {
+                let subItems = dropdownContent.children;
+                for (let i = 0; i < subItems.length; i++) {
+                    topBarSide.appendChild(subItems[i].cloneNode(true)); // Add sub-items to mobile menu
+                }
+            }
+            item.remove(); // Remove "Members"
             continue;
         }
 
@@ -44,6 +52,7 @@ function resizeEvent() {
         topBarOption.style.display = 'none';
     }
 }
+
 
 window.addEventListener('resize',()=>{
     resizeEvent();

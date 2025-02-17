@@ -176,3 +176,19 @@
     }
 }
 
+@media (max-width: 768px) {
+    .top-bar-side a {
+        display: block; /* Ensure all items appear in a similar block format */
+        padding: 10px 15px; /* Match the spacing of other menu items */
+        text-decoration: none; /* Remove underline */
+        color: black; /* Match other menu items */
+        font-size: 15px; /* Match the font size */
+        font-family: 'Bitter', serif; /* Apply same font */
+    }
+
+    .top-bar-side a:hover {
+        color: #69aa70; /* Ensure same hover effect */
+    }
+}
+
+

@@ -1021,21 +1021,5 @@ body {
     text-align: left; /* Ensures text aligns properly */
 }
 
-@media (max-width: 768px) {
-    .members-professor {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center; /* Center elements */
-        text-align: center; /* Align text properly */
-    }
 
-    .members-professor-img {
-        width: 80%; /* Reduce image width for mobile */
-        max-width: 250px; /* Prevents image from being too large */
-    }
-
-    .members-professor-description {
-        width: 90%; /* Makes text wrap properly */
-        text-align: center; /* Center text */
-    }
-}
 

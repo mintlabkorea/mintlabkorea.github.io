@@ -462,6 +462,42 @@ body {
   align-items: center;   /* vertically center the image and text */
 }
 
+.member-container {
+  /* Make each student row have a black “bar” on top */
+  border-top: 30px solid black;  
+  /* White background for the row */
+  background-color: #fff;  
+  display: flex;               
+  align-items: center;         /* Vertically center image & text */
+  padding: 20px;               /* Space inside the “card” */
+  margin-bottom: 20px;         /* Space between different students */
+}
+.member-img {
+  width: 200px;       /* pick an image width you like */
+  margin-right: 40px; /* gap between photo & text */
+  flex-shrink: 0;     /* prevent shrinking if the window is narrow */
+}
+.member-img img {
+  width: 100%;        /* fill that 200px container */
+  height: auto;
+  object-fit: cover;  /* ensures nice cropping if needed */
+}
+.member-info h2 {
+  margin-top: 0;      /* remove default heading margin */
+  font-size: 1.8rem;  /* adjust to taste */
+  font-weight: 600;   /* bold but not too bold */
+  margin-bottom: 10px;
+}
+.member-info ul {
+  list-style: disc;
+  padding-left: 20px; /* left indent for bullets */
+  margin: 0;
+}
+.member-info li {
+  margin-bottom: 8px; /* spacing between bullet lines */
+  line-height: 1.5;
+}
+
 /* Shrink the image container and give some space on the right */
 .members-img {
   width: 180px;          /* pick a size you like */

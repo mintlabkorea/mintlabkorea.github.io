@@ -1004,6 +1004,22 @@ body {
 
 
 
+@media (max-width: 768px) {
+    .members-professor {
+        display: block; /* Stack image and text instead of side-by-side */
+        text-align: center; /* Center text below the image */
+    }
+
+    .members-professor-img {
+        width: 100%; /* Make the image take full width */
+        max-width: 300px; /* Prevent it from being too large */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .members-professor-description {
+        margin-top: 15px; /* Add spacing between image and text */
+    }
+}
 
 
 

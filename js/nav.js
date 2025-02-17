@@ -16,28 +16,31 @@ function gapDetected() {
 }
 
 function resizeEvent() {
-    while(topBarNav.firstElementChild && gapDetected()) {
-        if(document.querySelector('.top-bar-nav-item')){
-            deletedItem.push(topBarNav.firstElementChild);
-            deletedGap.push(topBarNav.firstElementChild.offsetWidth);
-            // topBarSide.insertBefore(topBarNav.firstElementChild, topBarSide.firstChild);
-            // topBarNav.removeChild(topBarNav.firstElementChild);
-            topBarSide.appendChild(topBarNav.firstElementChild);
-        }
-    }
-    
-    while(deletedItem.length > 0 && window.innerWidth - logo.offsetWidth - topBarNav.offsetWidth > navGap + gap + deletedGap[deletedGap.length-1]){
-        // topBarNav.insertBefore(topBarSide.firstElementChild, topBarNav.firstChild);
-        topBarSide.appendChild(topBarNav.firstElementChild);
+    while (topBarNav.firstElementChild && gapDetected()) {
+        let item = topBarNav.firstElementChild;
+        let itemText = item.querySelector('a') ? item.querySelector('a').innerText.trim() : "";
 
-        // topBarSide.removeChild(topBarSide.firstElementChild);
+        // Exclude "Members" from being moved to mobile menu
+        if (window.innerWidth <= 768 && itemText === 'Members') {
+            item.remove(); // Hide "Members" in mobile
+            continue;
+        }
+
+        deletedItem.push(item);
+        deletedGap.push(item.offsetWidth);
+        topBarSide.appendChild(item);
+    }
+
+    while (deletedItem.length > 0 && 
+           window.innerWidth - logo.offsetWidth - topBarNav.offsetWidth > navGap + gap + deletedGap[deletedGap.length - 1]) {
+        topBarNav.appendChild(topBarSide.firstElementChild);
         deletedItem.pop();
         deletedGap.pop();
     }
-    if(deletedItem.length){
+
+    if (deletedItem.length) {
         topBarOption.style.display = 'flex';
-    }
-    else{
+    } else {
         topBarOption.style.display = 'none';
     }
 }

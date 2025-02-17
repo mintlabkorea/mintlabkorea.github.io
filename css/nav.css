@@ -192,3 +192,24 @@
 }
 
 
+@media (max-width: 768px) {
+    .top-bar-side {
+        right: 0; /* Ensure it aligns to the right edge */
+        left: auto; /* Prevent unwanted shifting */
+        width: 100%; /* Make sure it spans correctly */
+        text-align: left; /* Align text properly */
+    }
+
+    .top-bar-side a {
+        display: block;
+        padding: 12px 20px; /* Ensure even spacing */
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-family: 'Bitter', serif;
+    }
+
+    .top-bar-side a:hover {
+        background-color: #f4f4f4; /* Slight hover effect */
+    }
+}

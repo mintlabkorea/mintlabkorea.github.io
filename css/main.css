@@ -988,3 +988,17 @@ body {
 .members-professor-description li {
   margin-bottom: 0.5em;
 }
+
+
+/* Style journal names in red */
+.journal-name {
+    color: red; /* Makes journal names red */
+    font-style: italic; /* Keeps the italic formatting */
+}
+
+/* Remove bullet points from the Equal Contribution line */
+.no-bullet {
+    list-style-type: none; /* Removes bullet points */
+    padding-left: 0; /* Ensures proper alignment */
+}
+

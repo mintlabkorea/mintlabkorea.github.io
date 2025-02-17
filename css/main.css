@@ -292,14 +292,20 @@ body {
     align-items: center;
 }
 
-.footer{
-    padding:40px 0 0 50px;
-    height:400px;
-    width:100%;
+.footer {
+    padding: 20px 50px; /* 위쪽 여백 감소 */
+    min-height: 80px; /* 최소 높이 설정 */
+    height: auto; /* 컨텐츠에 맞게 자동 조정 */
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     color: grey;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 세로 가운데 정렬 */
+    align-items: flex-start; /* 왼쪽 정렬 */
 }
+
 
 .footer-title{
     font-size: xx-large;

@@ -28,9 +28,11 @@ function resizeEvent() {
                 let subItems = dropdownContent.children;
                 for (let i = 0; i < subItems.length; i++) {
                     let newItem = subItems[i].cloneNode(true);
-                    newItem.style.padding = "12px 20px"; // Ensure spacing matches
-                    newItem.style.display = "block"; // Keep alignment consistent
+                    newItem.style.textAlign = "center"; // Ensure text is centered
+                    newItem.style.display = "block"; // Match other items
+                    newItem.style.padding = "12px 0"; // Keep consistent spacing
                     topBarSide.appendChild(newItem);
+
 
                 }
             }

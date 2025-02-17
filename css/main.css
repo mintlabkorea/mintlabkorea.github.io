@@ -666,11 +666,11 @@ body {
 
 @media all and (min-width:480px) and (max-width:768px) {
     .home-map-container{
-        --width: 400px;
-        --height: 220px
+        width: 100%; 
+        height: auto;
     }
     .home-container{
-        height: 500px;
+        height: auto;
     }
     .home-title{
         width: 400px;
@@ -693,7 +693,8 @@ body {
         flex-direction: column;
     }
     .members-professor-description{
-        width: 290px;
+        width: 100%;     
+        height: auto;
         font-size: 1rem;
         text-align: center;
         span{
@@ -701,8 +702,10 @@ body {
             font-weight: 400;
         }
     }
+    
     .professor-professor-description{
         text-align: left;
+        width: 100%;
     }
     .members-img{
         width: 180px;

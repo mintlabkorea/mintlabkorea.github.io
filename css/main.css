@@ -519,6 +519,44 @@ body {
     }
 }
 
+<!-- ee -->
+/* Make the overall list stack each person in its own row */
+.members {
+  display: flex;
+  flex-direction: column; /* instead of row or wrap */
+  gap: 30px;             /* some vertical spacing between people */
+}
+
+/* Make each “members-member” become a row: image on the left, text on the right */
+.members-member {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center;   /* vertically center the image and text */
+}
+
+/* Shrink the image container and give some space on the right */
+.members-img {
+  width: 180px;          /* pick a size you like */
+  height: auto;          /* let the image flow naturally */
+  margin-right: 20px;    /* gap between image and description */
+  flex-shrink: 0;        /* don’t let it shrink if the screen is tight */
+}
+
+.members-img img {
+  width: 100%;           /* so the image fills that 180px container */
+  height: auto;
+  object-fit: cover;     /* optional for better cropping if needed */
+}
+
+/* The text on the right can just fill up the remaining space */
+.members-member-description {
+  /* you can style this text however you like */
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+
+
 .professor-professor-description{
     span{
         font-weight: 400;

@@ -669,14 +669,13 @@ body {
         --width: 400px;
         --height: 220px
     }
-    .home-container{
-        height: 500px;
-    }
     .home-title{
         width: 400px;
         font-size: 2rem;
     }
-    
+    .home-container{
+        height: 500px;
+    }
     .research-container{
         padding: 0 30px 30px 30px;
     }
@@ -710,14 +709,14 @@ body {
     .members-img{
         width: 180px;
         height: 240px;
-        margin: 20px 0px;
+        margin: 15px 0;
         img{
 
             height: 240px;
         }
     }
     .members-professor-img{
-        margin: 20px 0px
+        margin: 0 auto;
     }
     .members-member{
         width: 160px;
@@ -734,7 +733,7 @@ body {
     .members-img{
         width: 150px;
         height: 200px;
-        margin: 20px 0;
+        margin: 0 auto;
         img{
             height: 200px;
         }
@@ -807,11 +806,11 @@ body {
     .home-container{
         height: 500px;
     }
-    .card-container-title{
-        margin: 50px 0 10px;
-    }
     .research-container{
         padding: 0 30px 30px 30px;
+    }
+    .card-container-title{
+        margin: 50px 0 10px;
     }
     .home-title-research{
         width:340px;

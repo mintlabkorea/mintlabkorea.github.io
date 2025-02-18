@@ -709,7 +709,7 @@ body {
     .members-img{
         width: 180px;
         height: 240px;
-        margin: 15px 0;
+        margin: 0 auto;
         img{
 
             height: 240px;
@@ -733,7 +733,7 @@ body {
     .members-img{
         width: 150px;
         height: 200px;
-        margin: 0 auto;
+        margin: 20px 0;
         img{
             height: 200px;
         }
@@ -812,6 +812,7 @@ body {
     .card-container-title{
         margin: 50px 0 10px;
     }
+    
     .home-title-research{
         width:340px;
     }

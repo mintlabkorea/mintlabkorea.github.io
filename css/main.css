@@ -879,19 +879,19 @@ body {
     }
     .top-container{
         padding-left: 12px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .left-container-label-text{
-        font-size: 0.8rem;
-        transform:rotate(-67.5deg) translateX(80px) translateY(428px);
+        font-size: 0.7rem;
+        transform:rotate(-67.5deg) translateX(60px) translateY(316.5px);
     }
     .right-container-label-text{
-        font-size: 0.8rem;
-        transform:rotate(68deg) translateX(90px) translateY(30px);
+        font-size: 0.7rem;
+        transform:rotate(67.5deg) translateX(70px) translateY(30px);
     }
     .bottom-container-label-text{
-        font-size: 0.8rem;
-        transform:rotate(-6deg) translateX(105px) translateY(40px);
+        font-size: 0.7rem;
+        transform:rotate(-6deg) translateX(60px) translateY(28px);
     }
 
     .news-img{

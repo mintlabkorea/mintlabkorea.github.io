@@ -792,7 +792,141 @@ body {
         font-size:8px;
     }
 } 
-  
+
+
+
+@media all and (max-width:480px) {
+    .home-map-container{
+        width: 100%;
+        height: auto; 
+    }
+    .home-title{
+        width: 400px;
+        font-size: 2rem;
+    }
+    .home-container{
+        height: auto;
+    }
+    .card-container-title{
+        margin: 50px 0 10px;
+    }
+    .research-container{
+        padding: 0 30px 30px 30px;
+    }
+    .home-title-research{
+        width:340px;
+    }
+    .home-title-research-description{
+        width:340px;
+        font-size: 1rem;
+    }
+
+    .members-professor{
+        align-items: center;
+        flex-direction: column;
+    }
+    .members-professor-description{
+        width: 100%;     
+        height: auto;
+        font-size: 1rem;
+        text-align: center;
+        span{
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+    
+    .professor-professor-description{
+        text-align: left;
+        width: 100%;
+    }
+    .members-img{
+        width: 180px;
+        height: 240px;
+        margin: 15px 0;
+        img{
+
+            height: 240px;
+        }
+    }
+    .members-professor-img{
+        margin: 20px 0px
+    }
+    .members-member{
+        width: 160px;
+        align-items: center;
+
+    }
+    .members-member-description{
+        width: 175px;
+        font-size: 0.85rem;
+        span{
+            font-size:1.1rem;
+        }
+    }
+    .members-img{
+        width: 150px;
+        height: 200px;
+        margin: 20px 0;
+        img{
+            height: 200px;
+        }
+    }
+    .members{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .top-container{
+        padding-left: 12px;
+        font-size: 0.8rem;
+    }
+    .left-container-label-text{
+        font-size: 0.8rem;
+        transform:rotate(-67.5deg) translateX(80px) translateY(428px);
+    }
+    .right-container-label-text{
+        font-size: 0.8rem;
+        transform:rotate(68deg) translateX(90px) translateY(30px);
+    }
+    .bottom-container-label-text{
+        font-size: 0.8rem;
+        transform:rotate(-6deg) translateX(105px) translateY(40px);
+    }
+
+    .news-img{
+        height:150px;
+    }
+    .left-container-img{
+        width:80px;
+        transform: translateX(-250px) translateY(70px);
+    }
+    .left-container-text{
+        width:120px;
+        transform: translateX(-115px) translateY(90px);
+        font-size:8px;
+    }
+    .bottom-container-img{
+        width:120px;
+        transform: translateX(60px) translateY(100px);
+    }
+    .bottom-container-text{
+        width:120px;
+        transform: translateX(190px) translateY(115px);
+        font-size:8px;
+    }   
+    .right-container-img{
+        width: 100px;
+        transform: translateX(160px) translateY(65px);
+    } 
+    .right-container-text{
+        width:140px;
+        transform: translateX(160px) translateY(158px);
+        font-size:8px;
+    }
+} 
+
+
 
 .top-bar-nav-item.dropdown {
   position: relative; /* So .dropdown-content can position absolutely */

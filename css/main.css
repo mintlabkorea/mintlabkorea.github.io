@@ -850,7 +850,7 @@ body {
         }
     }
     .members-professor-img{
-        margin: 20px 0px
+        margin: 0 auto;
     }
     .members-member{
         width: 160px;
@@ -867,7 +867,7 @@ body {
     .members-img{
         width: 150px;
         height: 200px;
-        margin: 20px 0;
+        margin: 0 auto;
         img{
             height: 200px;
         }

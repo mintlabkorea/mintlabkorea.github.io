@@ -875,7 +875,7 @@ body {
     .members{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
     .top-container{
         padding-left: 12px;

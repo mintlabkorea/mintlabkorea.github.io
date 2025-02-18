@@ -710,14 +710,14 @@ body {
     .members-img{
         width: 180px;
         height: 240px;
-        margin: 15px 0;
+        margin: 0 auto;
         img{
 
             height: 240px;
         }
     }
     .members-professor-img{
-        margin: 20px 0px
+        margin: 0 auto;
     }
     .members-member{
         width: 160px;

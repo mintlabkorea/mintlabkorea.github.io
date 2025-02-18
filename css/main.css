@@ -983,6 +983,27 @@ body {
   line-height: 1.6;
 }
 
+
+/** students-page (학생 소개 페이지) 전용 오버라이드 **/
+.students-page .home-map-container.research-container {
+  width: 100% !important;   /* 부모 폭에 맞게 늘어남 */
+  height: auto !important;  /* 내용 높이에 따라 자동 */
+  overflow: visible !important; /* 필요하다면 숨김 해제 */
+  margin: 0 auto;           /* 가운데 정렬(옵션) */
+  /* min-height: 500px;     필요하다면 최소 높이 지정 */
+}
+
+/* (선택) 화면 폭이 더 작아졌을 때 추가 조정 */
+@media (max-width: 768px) {
+  .students-page .home-map-container.research-container {
+    width: 90% !important;  
+    /* 혹은 그냥 100% 써도 됨. */
+    height: auto !important;
+    overflow: visible !important;
+    margin: 0 auto; 
+  }
+}
+
 /* OPTIONAL: fix the HTML “<ur>” => “<ul>” for lists 
    so bullets display correctly: */
 

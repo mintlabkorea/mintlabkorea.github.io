@@ -666,11 +666,11 @@ body {
 
 @media all and (min-width:480px) and (max-width:768px) {
     .home-map-container{
-        width: 100%; 
-        height: auto;
+        --width: 400px;
+        --height: 220px
     }
     .home-container{
-        height: auto;
+        height: 500px;
     }
     .home-title{
         width: 400px;

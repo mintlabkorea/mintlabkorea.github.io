@@ -402,14 +402,9 @@ body {
         height:100%;
         width: fit-content;
     }
-    :hover{
-        padding:1px ;
-    }
 }
 .news-participants{
-    detail{
-        
-    }
+    font-family: "Montserrat", sans-serif;
 }
 ul {
     margin-left: 36px;

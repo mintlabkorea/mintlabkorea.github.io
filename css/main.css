@@ -974,6 +974,23 @@ body {
     }
 
 }
+.logo:hover{
+    cursor:pointer;
+}
+.top-bar-nav{
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #7bc685;
+        cursor: pointer;
+    }
+}
+.top-bar-nav-item:hover{
+    color:#7bc685;
+    cursor:pointer;
+}
 
 .top-bar-nav-item.dropdown {
   position: relative; /* So .dropdown-content can position absolutely */
@@ -996,13 +1013,21 @@ body {
   text-decoration: none;
   color: #333;
 }
+.top-bar-nav-item.dropdown .dropdown-content a:hover {
+    display: block;       /* Stack each submenu link vertically */
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #7bc685
+  }
 
 .top-bar-nav-item.dropdown .dropdown-content a:hover {
   background-color: #f5f5f5;
+  
 }
 
 .top-bar-nav-item.dropdown:hover .dropdown-content {
   display: block;       /* Show on hover */
+  color: #7bc685;
 }
 
 /* Lay out photo on left, text on right */

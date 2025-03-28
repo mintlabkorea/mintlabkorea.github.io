@@ -405,6 +405,7 @@ body {
 }
 .news-participants{
     font-family: "Montserrat", sans-serif;
+    font-weight: bold;
 }
 ul {
     margin-left: 36px;
@@ -525,6 +526,9 @@ details[open] > summary ~ * {
   width: 100%;        /* fill that 200px container */
   height: auto;
   object-fit: cover;  /* ensures nice cropping if needed */
+}
+.member-info{
+    font-family:"Montserrat", sans-serif;
 }
 .member-info h2 {
   margin-top: 0;      /* remove default heading margin */

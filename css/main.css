@@ -155,10 +155,6 @@ body {
     width:250px;
     display:flex;
     transform: translateX(-630px) translateY(160px);
-    img{
-        width:100%;
-        height:fit-content;
-    }
 }
 .left-container-text{
     font-family: "Noto Sans", sans-serif;
@@ -174,10 +170,6 @@ body {
     height:150px;
     display:flex;
     transform: translateX(250px) translateY(280px);
-    img{
-        width:100%; 
-        height:fit-content;
-    }
 }
 .bottom-container-text{
     font-family: "Noto Sans", sans-serif;
@@ -193,10 +185,6 @@ body {
     height:150px;
     display:flex;
     transform: translateX(440px) translateY(180px);
-    img{
-        width:100%;
-        height:fit-content;
-    }
 }
 .right-container-text{
     font-family: "Noto Sans", sans-serif;

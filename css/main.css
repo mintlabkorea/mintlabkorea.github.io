@@ -21,6 +21,7 @@ body {
         border-radius: 5px;
         cursor: pointer;
         transition: background 0.5s;
+        align-items: left;
     }
      
     details > summary::-webkit-details-marker {

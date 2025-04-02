@@ -388,7 +388,7 @@ body {
     width: 400px;
     overflow: hidden;
 }
-.news-img a{
+.news-img a img{
     height:100%;
     width: fit-content;
 }

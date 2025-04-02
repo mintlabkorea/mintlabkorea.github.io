@@ -387,10 +387,10 @@ body {
     height: 200px;
     width: 400px;
     overflow: hidden;
-    img{
-        height:100%;
-        width: fit-content;
-    }
+}
+.news-img img{
+    height:100%;
+    width: fit-content;
 }
 .news-participants{
     font-family: "Montserrat", sans-serif;

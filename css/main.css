@@ -603,7 +603,7 @@ details[open] > summary ~ * {
         width: 500px;
     }
     .left-container-img{
-        width:100%;
+        width:60px;
         height:100%;
         transform: translateX(-580px) translateY(150px);
     }
@@ -613,7 +613,7 @@ details[open] > summary ~ * {
         /* font-size:small; */
     }
     .bottom-container-img{
-        width:100%;
+        width:80px;
         height:100%;
         transform: translateX(160px) translateY(230px);
     }
@@ -623,7 +623,7 @@ details[open] > summary ~ * {
         /* font-size:small; */
     }   
     .right-container-img{
-        width: 100%;
+        width: 70px;
         height:100%;
         transform: translateX(360px) translateY(160px);
     } 

@@ -604,12 +604,11 @@ details[open] > summary ~ * {
     }
     .left-container-img{
         width:40px;
-        height:40px;
-        transform: translateX(-580px) translateY(150px);
+        transform: translateX(-50px) translateY(25px);
     }
     .left-container-text{
         width:300px;
-        transform: translateX(-250px) translateY(200px);
+        transform: translateX(-100px) translateY(30px);
         /* font-size:small; */
     }
     .bottom-container-img{

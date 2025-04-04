@@ -940,6 +940,7 @@ details[open] > summary ~ * {
     }
     .left-container-img{
         width:70px;
+        height:70px;
         transform: translateX(-185px) translateY(47px);
     }
     .left-container-text{
@@ -949,6 +950,7 @@ details[open] > summary ~ * {
     }
     .bottom-container-img{
         width:100px;
+        height:120px;
         transform: translateX(40px) translateY(75px);
     }
     .bottom-container-text{
@@ -958,6 +960,7 @@ details[open] > summary ~ * {
     }   
     .right-container-img{
         width: 80px;
+        height: 100px;
         transform: translateX(120px) translateY(50px);
     } 
     .right-container-text{
@@ -1052,7 +1055,7 @@ details[open] > summary ~ * {
 
 /** students-page (학생 소개 페이지) 전용 오버라이드 **/
 .students-page .home-map-container.research-container {
-  width: 100% !important;   /* 부모 폭에 맞게 늘어남 */
+  width: auto !important;   /* 부모 폭에 맞게 늘어남 */
   height: auto !important;  /* 내용 높이에 따라 자동 */
   overflow: visible !important; /* 필요하다면 숨김 해제 */
   margin: 0 auto;           /* 가운데 정렬(옵션) */

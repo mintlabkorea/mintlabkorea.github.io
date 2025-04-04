@@ -386,8 +386,8 @@ body {
 
 .news-img{
     margin: 30px 0 0 0;
-    height: 200px;
-    width: 400px;
+    height: fit-content;
+    width: fit-content;
     overflow: hidden;    
 }
 .news-img img{

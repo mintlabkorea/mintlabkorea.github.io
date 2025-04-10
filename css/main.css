@@ -19,8 +19,32 @@ body {
     --shadow: 12px;
     width: var(--width);
     height: var(--height);
-    background-color: #676767;
+    background-color: white;
     overflow: hidden;
+    display: grid;
+    gap: 10px;
+}
+.home-map-upper{
+    align-items: center;
+    height:50%;
+}
+.home-map-left{
+    float: left;
+    width:50%;
+    text-align: center;
+}
+.home-map-right{
+    float: right;
+    width:50%;
+    text-align: center;
+}
+
+.home-map-explain{
+    width: 100%;
+    height: 50%;
+}
+.home-map-bot{
+    text-align: center;
 }
 .research-container-map{
     display: flex;
@@ -604,11 +628,12 @@ details[open] > summary ~ * {
     }
     .left-container-img{
         width:40px;
-        transform: translateX(-50px) translateY(25px);
+        height:40px;
+        transform: translateX(-580px) translateY(150px);
     }
     .left-container-text{
         width:300px;
-        transform: translateX(-100px) translateY(30px);
+        transform: translateX(-250px) translateY(200px);
         /* font-size:small; */
     }
     .bottom-container-img{

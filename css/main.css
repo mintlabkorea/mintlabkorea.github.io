@@ -399,7 +399,6 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: space-between
-    
 }
 
 .card{
@@ -500,6 +499,7 @@ details[open] > summary ~ * {
 @media all and (min-width:480px) and (max-width:768px) {
     .card-container{
         --heightRatio: 1.2;
+        flex-direction: column;
     }
     .card-section{
         width:auto;
@@ -511,9 +511,10 @@ details[open] > summary ~ * {
         */
     .card{
         font-size: small;
-        width:auto;
-        height: auto;
+        width:100%;
+        height: fit-content;
     }
+    
 } 
   
 
@@ -526,8 +527,9 @@ details[open] > summary ~ * {
         margin-bottom: 0;
     }
     .card-section{
-        width:76%;
-        height: 300px;
+        width:auto;
+        height: fit-content;
+        flex-direction: column;
     }
     /*
     .card-section-side{

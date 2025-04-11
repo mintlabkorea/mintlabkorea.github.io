@@ -631,6 +631,9 @@ details[open] > summary ~ * {
     .home-container{
         height: 800px;
     }
+    .home-containe2{
+        height: 1050px;
+    }
     .home-title{
         width: 900px;
     }
@@ -702,6 +705,9 @@ details[open] > summary ~ * {
     }
     .home-container{
         height: 750px;
+    }
+    .home-container2{
+        height: 1000px;
     }
     .home-title{
         width: 700px;
@@ -780,6 +786,9 @@ details[open] > summary ~ * {
     }
     .home-container{
         height: 500px;
+    }
+    .home-container2{
+        height: 670px;
     }
     .research-container{
         padding: 0 30px 30px 30px;
@@ -916,6 +925,9 @@ details[open] > summary ~ * {
     }
     .home-container{
         height: 500px;
+    }
+    .home-container{
+        height: 670px;
     }
     .research-container{
         padding: 0 30px 30px 30px;
@@ -1187,7 +1199,7 @@ details[open] > summary ~ * {
 }
 
 /* 교수 페이지에서 고정 높이 대신 auto */
-.professor-page .home-container {
+.professor-page .home-container .home-container2 {
   height: auto !important;
   /* 필요하면 min-height: 900px; 추가 가능 */
 }

@@ -502,21 +502,24 @@ details[open] > summary ~ * {
         --heightRatio: 1.2;
     }
     .card-section{
-        width:100%;
+        width:auto;
     }
+    /*
     .card-section-side{
         width:12%;
     }
+        */
     .card{
         font-size: small;
-        width:40%;
+        width:auto;
+        height: auto;
     }
 } 
   
 
 @media all and (max-width:480px) {
     .card-container{
-        --heightRatio: 1.8;
+        --heightRatio: 1.2;
     }
     .card-container-title{
         margin-top: 25px;
@@ -533,7 +536,8 @@ details[open] > summary ~ * {
     */
     .card{
         font-size: small;
-        width:70%;
+        width:auto;
+        height:auto;
     }
 }
 

@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+:root{
+    --height: 40px;
+}
+
+.top-bar-nav-item{
+    a:hover{
+        font-size: 101%;
+        color:#69aa70;
+    }
+}
+.top-bar {
+    /* filter: drop-shadow(0 0 5px rgb(200, 200, 200)); */
+    z-index: 2;
+    background-color: hsla(0, 0%, 100%);
+    position:fixed;
+    /* height: 40px; */
+    height:var(--height);
+    width: 100%;
+    /* border-bottom: 1px solid lightgray; */
+    /* padding: 5px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        color:black;
+    }
+}
+.top-bar-nav-and-side{
+    display:flex;
+    gap: 5px;
+}
+.logo {
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    img{
+        height:var(--height);
+    }
+}
+.logo-text {
+    font-family: "Montserrat", sans-serif;
+}
+.top-bar-nav {
+    right: 10px;
+    display:flex;
+    gap:1em;
+}
+.top-bar-nav-item {
+    font-family: 'Bitter',serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.hidden {
+    animation: hide 0.2s linear forwards;
+}
+  
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+  
+.shown {
+    animation: show 0.2s linear forwards;
+}
+  
+@keyframes show {
+    from {
+
+        visibility: hidden;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width:480px) {
+    :root{
+        --height:50px;
+    }
+    .top-bar{
+        border-bottom: 2px solid lightgray;
+    }
+    .logo img{
+            height: 30px;
+    }
+
+}
+
+.top-bar-option{
+    /* padding: 3%; */
+    display:none;
+    button{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: 'Bitter',serif;
+        font-size: 15px;
+        background-color: white;
+        border: 0;
+        /* border-bottom: 1px solid lightgray; */
+        height:var(--height);
+        width:var(--height);
+
+        /* @media (max-width:480px) {
+            border-bottom: 2px solid lightgray;
+        } */
+    }
+}
+
+.top-bar-side{
+    position: fixed;
+    right:0;
+    width:200px;
+    /* height:fit-content; */
+    padding: 20px;
+    top: var(--height);
+    z-index: 2;
+    
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    opacity: 1;
+    
+    background-color: white;
+    filter:drop-shadow(0 0 15px rgba(116, 116, 116, 0.272));
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint if needed */
+    .top-bar-side .dropdown > a { 
+        display: none; /* Hide "Members" on mobile */
+    }
+
+    .top-bar-side .dropdown-content {
+        display: block !important; /* Ensure sub-items are always visible */
+        position: relative; /* Remove dropdown hover effect */
+        background: none; /* Match background */
+        box-shadow: none; /* Remove unnecessary styles */
+    }
+
+    .top-bar-side .dropdown-content a {
+        padding: 10px 15px; /* Keep consistent padding */
+        display: block; /* Make them full-width */
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar-side a {
+        display: block; /* Ensure all items appear in a similar block format */
+        padding: 10px 15px; /* Match the spacing of other menu items */
+        text-decoration: none; /* Remove underline */
+        color: black; /* Match other menu items */
+        font-size: 15px; /* Match the font size */
+        font-family: 'Bitter', serif; /* Apply same font */
+    }
+
+    .top-bar-side a:hover {
+        color: #69aa70; /* Ensure same hover effect */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .top-bar-side {
+        right: 0; /* Keep it aligned to the right */
+        width: 200px; /* Restore original width */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    .top-bar-side a {
+        display: block;
+        padding: 12px 0; /* Keep spacing */
+        text-align: center; /* Ensure text is centered */
+        font-size: 15px;
+        font-family: 'Bitter', serif;
+    }
+
+    .top-bar-side a:hover {
+        background-color: #f4f4f4; /* Hover effect */
+    }
+}

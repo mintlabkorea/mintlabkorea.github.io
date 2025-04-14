@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MINT LAB</title>
+        <link rel="icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/nav.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=stat_minus_1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" /> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="/js/load.js"></script>
+        <script>
+    if (window.location.pathname.endsWith("index.html")) {
+        window.history.replaceState({}, document.title, window.location.pathname.replace("index.html", ""));
+    }
+        </script>
+    </head>
+    <body>
+        <div id="header"></div>
+ 
+        <div class="home-container">
+            <div class="home-title">
+                <span>M</span>ovement <span>INT</span>elligence Laboratory
+            </div>
+            <div class="home-map-container">
+                <div class="home-map-upper">
+                    <div class="home-map-left">
+                        <img src="/images/home_left.png">
+                    </div>
+                    <div class="home-map-right">
+                        <img src="/images/home_right.png">
+                    </div>
+                </div>
+                
+                <!--div class="left-container-wrap">
+                    <a href = "/research#intentions">
+                    <div class="left-container">
+                        <div class="left-container-img hidden">
+                            <img src="/images/home_left.png" width="180px" transform="translateX(-580px) translateY(150px)">
+                        </div>
+                        <div class="left-container-text">
+                            <b>Digital healthcare platforms</b><br>description text Lorem ipsum dolor sit amet 
+                        </div>
+                        <div class="left-container-label">
+                            <div class="left-container-label-text">Intentions</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="bottom-container-wrap">
+                    <a href = "/research#kinematics">
+                    <div class="bottom-container">
+                        <div class="bottom-container-img hidden">
+                            <img src="/images/home_bottom.png"  width="230px" transform="translateX(160px) translateY(230px)">
+                        </div>
+                        <div class="bottom-container-text">
+                            <b>Mobile/Service Robots</b><br>description text Lorem ipsum dolor sit amet 
+                        </div>
+                        <div class="bottom-container-label">
+                            <div class="bottom-container-label-text">Kinematics, Kinetics</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="right-container-wrap">
+                    <a href = "/research#actions">
+                    <div class="right-container">
+                        <div class="right-container-img hidden">
+                            <img src="/images/home_right.png" width="200px" transform= "translateX(360px) translateY(160px)">
+                        </div>
+                        <div class="right-container-text">
+                            <b>Wearable Robots</b><br>description text Lorem ipsum dolor sit amet 
+                        </div>
+                        <div class="right-container-label">
+                            <div class="right-container-label-text">Actions, Activities</div>
+                        </div>
+                    </div>
+                    </a>
+                </div-->
+                <!--div class="top-container-wrap">
+                    <div class="top-container">Human-Centered Robotic Intelligence</div>
+                </div-->
+                
+            </div>
+        </div>
+        <div class="home-container" style="background-color:whitesmoke">
+            <div class="home-title card-container-title"><span>C</span>urrent <span>R</span>esearch <span>T</span>opics</div>
+            <div class="home-map-container card-container">
+                <!--div class="card-section-side">
+                    <button>
+                        <span class="material-symbols-outlined">
+                        chevron_left
+                        </span>
+                    </button>
+                </div-->
+                <div class="card-section" style="flex-direction: row; display: inline-block; ">
+                        <div class="card">
+                            <img src="/images/IMUs.jpg"onclick="location.href='/research#IMUs'" style="width:auto; height:70%">
+                            <div class="description">
+                                <h2>Human Pose Reconstruction with Sparse IMUs</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/images/PocketRacer.jpg" onclick="location.href='/research#PocketRacer'">
+                            <div class="description" style="vertical-align: middle;">
+                                <br><h2>Autonomous Racing</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/images/QMARL2.png" onclick="location.href='/research#QMARL'">
+                            <div class="description">
+                                <h2>Quantum Multi-Agent Reinforcement Learning</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/images/home_bottom.png" onclick="location.href='/research#AutoDriving'">
+                            <div class="description">
+                                <h2>Humn States in Autonomous Driving</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/images/3DRecon.png" onclick="location.href='/research#3DRecon'">
+                            <div class="description">
+                                <br><h2>3D Reconstruction</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/images/SoftGripper.png" onclick="location.href='/research#Gripper'">
+                            <div class="description">
+                                <br><h2>Soft Gripper</h2>
+                            </div>
+                        </div>
+                    
+                    <!--div class="bottom"></div-->
+                </div>
+                <!--div class="card-section-side">
+                    <button>
+                        <span class="material-symbols-outlined">
+                        chevron_right
+                        </span>
+                    </button>
+                </div-->
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+    <script src="/js/main.js"></script>
+    <script src="/js/card.js"></script>
+</html>

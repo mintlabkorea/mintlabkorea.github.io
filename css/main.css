@@ -68,7 +68,8 @@ body {
     flex-direction: column;
     height: auto;
     border-radius: 20px;
-    padding:60px;
+    padding-left:60px;
+    padding-right:60px;
     padding-top:0;
 }
 /*

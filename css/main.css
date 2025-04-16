@@ -538,9 +538,9 @@ details[open] > summary ~ * {
 
 
 .members {
-  display: flex;
-  flex-direction: column; /* instead of row or wrap */
-  gap: 30px;             /* some vertical spacing between people */
+  
+  flex-direction: row; /* instead of row or wrap */
+  gap: 4%;             /* some vertical spacing between people */
 }
 
 /* Make each “members-member” become a row: image on the left, text on the right */
@@ -551,18 +551,19 @@ details[open] > summary ~ * {
 }
 
 .member-container {
-  /* Make each student row have a black “bar” on top */
-  border-top: 1px solid black;  
+
   /* White background for the row */
   background-color: #fff;  
-  display: flex;               
+  display: inline-grid;               
   align-items: center;         /* Vertically center image & text */
   padding: 20px;               /* Space inside the “card” */
   margin-bottom: 20px;         /* Space between different students */
+  width:24%;
+  flex-direction: column;
 }
 .member-img {
-  width: 200px;       /* pick an image width you like */
-  margin-right: 40px; /* gap between photo & text */
+  width: 100%;       /* pick an image width you like */
+  margin-bottom: 20px; /* gap between photo & text */
   flex-shrink: 0;     /* prevent shrinking if the window is narrow */
 }
 .member-img img {

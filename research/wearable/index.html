@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MINT LAB</title>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/nav.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=stat_minus_1" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="/js/load.js"></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="home-container-research">
+            <div class="home-title" style="font-weight: 500;"><span>Wearable Robotics</span> Research</div>
+            <div class="research-container-map">
+                <div id="IMUs" class="home-map-container research-container">
+                    <div class="home-title home-title-research">
+                        <span>Human Pose Reconstruction</span> Using Sparsely Attached <span>IMUs</span>
+                    </div>
+                    <div class="home-title home-title-research-description" style="display:flex">
+                        <div style="height:100%; width:100%; text-align:justify; line-height: 150%; font-size:6;">
+                            <video controls width="40%" height="100%" autoplay muted style="float:left; margin-right: 20px; margin-bottom: 10px;" >
+                                <source src="/videos/SparseIMUs.mp4" type="video/mp4">
+                            </video>
+                            <div><h3>3D rendering of Captured Motion</h3></div>
+                            In our lab, we focus on reconstructing human poses in three-dimensional space using a small number of inertial measurement units (IMUs). These lightweight sensors are attached to a person's body to capture motion data, such as acceleration and angular velocity, during various movements. We then feed this kinematic data into an algorithm to map it to a parametric 3D body model known as SMPL (Skinned Multi-Person Linear Model). The process involves calibrating the IMU data, estimating joint angles and positions, and then using a deep-learning algorithm to reconstruct the full-body 3D pose. Through sensor fusion techniques and optimization methods, we achieve reconstructions of human motion using fewer IMUs than traditional full-body tracking systems require. By using sparsely attached IMUs, our work aims to make human motion capture more accessible and cost-effective for applications in fields such as biomechanics, sports science, animation, and virtual reality.
+                        </div>
+                        </div>
+                        <div style="height: 360; width:60%; float:right; padding-left: 50px;">        
+                    </div>
+                </div>   
+                <div id="AutoDriving" class="home-map-container research-container">
+                    <div class="home-title home-title-research">
+                        <span>Human-States</span> in <span>Autonomous Driving</span>
+                    </div>
+                    <div class="home-title home-title-research-description" style="display:flex">
+                        <div style="height:100%; width:100%; text-align:justify; line-height: 150%; font-size:6;">
+                            <video controls width="40%" height="100%" autoplay muted style="float:left; margin-right: 20px; margin-bottom: 10px;" >
+                                <source src="/videos/AutoDriving.mp4" type="video/mp4">
+                            </video>
+                            <div><h3>Understanding Human States in Autonomous Driving through Wearable Signals</h3></div>
+                            As autonomous vehicles continue to evolve, human-vehicle interaction (HVI) remains a critical area of research—especially during moments when collaboration between the human and the system is essential. One of the key challenges in HVI is managing control transitions, where accurately and promptly understanding the driver’s state becomes vital.
+Our lab investigates how wearable devices, such as smartwatches, can provide valuable insights into a driver’s behavior and emotional state during these crucial moments.
+By combining motion data and physiological signals with contextual driving information, we aim to develop predictive models that not only identify what the driver is doing and how they feel, but also assess their readiness to take over control. Our research focuses on integrating these multimodal signals within realistic simulated environments, with the goal of better modeling human responses and enhancing the safety and reliability of human-AI collaboration on the road.
+                        </div>
+                        </div>
+                        <div style="height: 360; width:60%; float:right; padding-left: 50px;">        
+                    </div>
+                </div>
+                <!--div id="kinematics" class="home-map-container research-container">
+                    <div class="home-title home-title-research">
+                        Kinematics
+                    </div>
+                    <div class="home-title home-title-research-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ex corrupti odit dolore voluptatibus soluta? Ipsam minus quia, nobis quas veritatis a dolore in incidunt, dolores nisi deserunt? Debitis, totam.
+                    </div>
+                    <div class="home-title home-title-research home-title-researching">
+                        <span>Now</span> Researching
+                    </div>
+                    <div class="home-title home-title-research-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestiae provident saepe alias eligendi ex! Amet alias inventore doloribus quae ut est aperiam harum beatae, consequatur nam recusandae, voluptatum atque?
+                    </div>
+                    <div class="home-title home-title-research-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur facilis mollitia natus quia nesciunt nulla blanditiis, quo saepe. A non veritatis blanditiis corporis voluptatum veniam illum, harum optio nulla nesciunt!
+                    </div>
+                    <div class="home-title home-title-research home-title-researching">
+                        Publications
+                    </div>
+                    <div class="home-title home-title-research-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestiae provident saepe alias eligendi ex! Amet alias inventore doloribus quae ut est aperiam harum beatae, consequatur nam recusandae, voluptatum atque?
+                    </div>
+                    <div class="home-title home-title-research-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur facilis mollitia natus quia nesciunt nulla blanditiis, quo saepe. A non veritatis blanditiis corporis voluptatum veniam illum, harum optio nulla nesciunt!
+                    </div>
+                </div-->
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>

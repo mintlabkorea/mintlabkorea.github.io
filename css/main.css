@@ -946,11 +946,6 @@ details[open] > summary ~ * {
             font-weight: 400;
         }
     }
-    
-    .professor-professor-description{
-        text-align: left;
-        width: 100%;
-    }
     .members-img{
         width: 180px;
         height: 240px;
@@ -1009,6 +1004,16 @@ details[open] > summary ~ * {
     */
     .news-img{
         height:140px;
+    }
+    .member-container {
+        /* White background for the row */
+        background-color: #fff;  
+        display: inline-grid;               
+        align-items: center;         /* Vertically center image & text */
+        padding: 2%;               /* Space inside the “card” */
+        margin-bottom: 2%;         /* Space between different students */
+        width:50%;
+        flex-direction: column;
     }
     /*
     .left-container-img{

@@ -567,7 +567,7 @@ details[open] > summary ~ * {
   flex-shrink: 0;     /* prevent shrinking if the window is narrow */
 }
 .member-img img {
-  width: fit-content;        /* fill that 200px container */
+  width: 100%;        /* fill that 200px container */
   height: auto;
   object-fit: cover;  /* ensures nice cropping if needed */
 }

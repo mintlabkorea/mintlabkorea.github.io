@@ -101,7 +101,7 @@
 
 @media (max-width:480px) {
     :root{
-        --height:50px;
+        --height:60px;
     }
     .top-bar{
         border-bottom: 2px solid lightgray;

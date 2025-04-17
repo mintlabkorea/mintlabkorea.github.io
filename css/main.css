@@ -840,6 +840,7 @@ details[open] > summary ~ * {
         }
     }
     .members{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -983,6 +984,7 @@ details[open] > summary ~ * {
         }
     }
     .members{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

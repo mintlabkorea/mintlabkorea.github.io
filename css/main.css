@@ -349,7 +349,7 @@ body {
 }
 
 .card-container{
-    --heightRatio:2;
+    --heightRatio:1.4;
     height:calc(var(--height)*var(--heightRatio));
     background-color:whitesmoke;
     filter: none;
@@ -396,13 +396,13 @@ body {
 
 .card{
     height:50%;
-    width: 33%;
+    width: 100%;
     background-color: rgb(253, 253, 253);
     filter: drop-shadow(0 0 5px rgb(211, 211, 211));
     /* padding: 2%; */
     border-radius: 2%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     float:left;
 
@@ -411,8 +411,8 @@ body {
 
 .card img{
     /* border-radius: 2%; */
-    width:100%;
-    height: 70%;
+    width:50%;
+    height: 100%;
 }
 .card img:hover{
     cursor: pointer;
@@ -821,7 +821,7 @@ details[open] > summary ~ * {
         flex-direction: column;
     }
     .members-img{
-        width: 180px;
+        width: fit-content;
         height: 240px;
         margin: 0 auto;
         img{
@@ -845,7 +845,7 @@ details[open] > summary ~ * {
         }
     }
     .members-img{
-        width: 150px;
+        width: fit-content;
         height: 200px;
         margin: 20px 0;
         img{
@@ -999,6 +999,9 @@ details[open] > summary ~ * {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .member-info{
+        font-size: small;
     }
     /*
     .top-container{

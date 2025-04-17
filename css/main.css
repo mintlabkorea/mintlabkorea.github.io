@@ -963,12 +963,12 @@ details[open] > summary ~ * {
         }
     }
     .members-img{
-        width: 180px;
-        height: 240px;
+        width: 100%;
+        height: auto;
         margin: 15px 0;
         img{
 
-            height: 240px;
+            height: auto;
         }
     }
     .members-professor-img{
@@ -987,11 +987,11 @@ details[open] > summary ~ * {
         }
     }
     .members-img{
-        width: 150px;
-        height: 200px;
+        width: 100%;
+        height: auto;
         margin: 0 auto;
         img{
-            height: 200px;
+            height: auto;
         }
     }
     .members{

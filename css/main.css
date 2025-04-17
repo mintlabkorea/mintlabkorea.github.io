@@ -934,7 +934,7 @@ details[open] > summary ~ * {
         height: 670px;
     }
     .research-container{
-        padding: 0 30px 30px 30px;
+        padding: 0 0 0 0;
     }
     .card-container-title{
         margin: 50px 0 10px;

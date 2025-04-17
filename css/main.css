@@ -1006,6 +1006,17 @@ details[open] > summary ~ * {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .member-img img {
+        width: 100%;        /* fill that 200px container */
+        height: auto;
+        object-fit: cover;  /* ensures nice cropping if needed */
+      }
+    .member-info h2 {
+        margin-top: 0;      /* remove default heading margin */
+        font-size: 1.4rem;  /* adjust to taste */
+        font-weight: 600;   /* bold but not too bold */
+        margin-bottom: 10px;
+      }
     .member-info{
         font-size: small;
     }

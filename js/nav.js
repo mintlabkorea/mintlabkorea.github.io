@@ -39,7 +39,24 @@ function resizeEvent() {
             item.remove(); // Remove "Members"
             continue;
         }
+        if (window.innerWidth <= 768 && itemText === 'Research') {
+            let dropdownContent = item.querySelector('.dropdown-content'); // Get Professor & Students
 
+            if (dropdownContent) {
+                let subItems = dropdownContent.children;
+                for (let i = 0; i < subItems.length; i++) {
+                    let newItem = subItems[i].cloneNode(true);
+                    newItem.style.textAlign = "center"; // Ensure text is centered
+                    newItem.style.display = "block"; // Match other items
+                    newItem.style.padding = "12px 0"; // Keep consistent spacing
+                    topBarSide.appendChild(newItem);
+
+
+                }
+            }
+            item.remove(); // Remove "Members"
+            continue;
+        }
         deletedItem.push(item);
         deletedGap.push(item.offsetWidth);
         topBarSide.appendChild(item);

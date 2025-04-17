@@ -821,7 +821,7 @@ details[open] > summary ~ * {
         flex-direction: column;
     }
     .members-img{
-        width: fit-content;
+        width: 180px;
         height: 240px;
         margin: 0 auto;
         img{
@@ -845,7 +845,7 @@ details[open] > summary ~ * {
         }
     }
     .members-img{
-        width: fit-content;
+        width: 150px;
         height: 200px;
         margin: 20px 0;
         img{

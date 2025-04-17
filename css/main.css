@@ -717,6 +717,9 @@ details[open] > summary ~ * {
             height:240px;
         }
     }
+    .member-info{
+        font-size: small;
+    }
     /*
     .top-container{
         font-size: 1.3rem;
@@ -854,6 +857,9 @@ details[open] > summary ~ * {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    .member-info{
+        font-size: small;
     }
     /*
     .top-container{

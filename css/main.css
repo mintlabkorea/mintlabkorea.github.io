@@ -425,7 +425,7 @@ body {
 
 .card img{
     /* border-radius: 2%; */
-    width:50%;
+    width:70%;
     height: 100%;
 }
 .card img:hover{
@@ -437,7 +437,7 @@ body {
 }
 .description{
     padding: 3%;
-    width: 50%;
+    width: 30%;
     height: 100%;
     text-align: center;
     align-items: center;

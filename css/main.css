@@ -525,13 +525,17 @@ details[open] > summary ~ * {
     .card{
         flex-direction: column;
         font-size: 1em;
-        font-size: small;
         width:50%;
         height: 100%;
     }
     .card img{
         width: 100%;
         height: 50%;
+    }
+    .description{
+        font-size: 1em;
+        width:100%;
+        height:50%;
     }
     
 } 
@@ -566,6 +570,11 @@ details[open] > summary ~ * {
     .card img{
         width: 100%;
         height: 50%;
+    }
+    .description{
+        font-size: 1em;
+        width:100%;
+        height:50%;
     }
 }
 

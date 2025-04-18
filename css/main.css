@@ -409,7 +409,7 @@ body {
 }
 
 .card{
-    height:50%;
+    height:40%;
     width: 100%;
     background-color: rgb(253, 253, 253);
     filter: drop-shadow(0 0 5px rgb(211, 211, 211));
@@ -437,7 +437,8 @@ body {
 }
 .description{
     padding: 3%;
-    height: 30%;
+    width: 50%;
+    height: 100%;
     text-align: center;
     align-items: center;
     font-family: "Montserrat", sans-serif;
@@ -955,7 +956,7 @@ details[open] > summary ~ * {
         height: 500px;
     }
     .home-container{
-        height: 670px;
+        height: 470px;
     }
     .research-container{
         padding: 0 2% 0 2%;

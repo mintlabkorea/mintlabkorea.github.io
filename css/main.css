@@ -381,7 +381,7 @@ body {
 }
 
 .card-container{
-    --heightRatio:1.4;
+    --heightRatio:1.2;
     height:calc(var(--height)*var(--heightRatio));
     background-color:whitesmoke;
     filter: none;
@@ -437,8 +437,6 @@ body {
     flex-direction: column;
     align-items: center;
     float:left;
-
-    
 }
 
 .card img{

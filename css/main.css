@@ -30,8 +30,8 @@ body {
     overflow:visible;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     z-index: -1;
 }
 .home-map-upper video::-webkit-media-controls{
@@ -427,14 +427,14 @@ body {
 }
 
 .card{
-    height:40%;
-    width: 100%;
+    height:70%;
+    width: 50%;
     background-color: rgb(253, 253, 253);
     filter: drop-shadow(0 0 5px rgb(211, 211, 211));
     /* padding: 2%; */
     border-radius: 2%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     float:left;
 
@@ -443,7 +443,7 @@ body {
 
 .card img{
     /* border-radius: 2%; */
-    width:70%;
+    width:100%;
     height: 100%;
 }
 .card img:hover{
@@ -451,12 +451,12 @@ body {
 }
 .card img img{
     width:100%;
-    height:100%;
+    height:50%;
 }
 .description{
     padding: 3%;
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     text-align: center;
     align-items: center;
     font-family: "Montserrat", sans-serif;

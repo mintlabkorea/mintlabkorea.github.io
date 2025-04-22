@@ -464,8 +464,8 @@ body {
 
 
 .news-img{
-    height: fit-content;
-    width: fit-content;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     padding-left: 20%;
 }

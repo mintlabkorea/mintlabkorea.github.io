@@ -371,11 +371,9 @@ details[open] > summary ~ * {
         flex-direction: row;
         width:auto;
     }
-    /*
-    .card-section-side{
-        width:12%;
+    .home-map-upper{
+        width: 80%;
     }
-        */
     .card{
         flex-direction: column;
         font-size: 1em;

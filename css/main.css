@@ -278,8 +278,8 @@ body {
 
 .card img{
     /* border-radius: 2%; */
-    width:60%;
-    height: 40%;
+    width:40%;
+    height: 30%;
 }
 .card img:hover{
     cursor: pointer;
@@ -291,7 +291,6 @@ body {
 .description{
     padding: 3%;
     width: 100%;
-    height: 60%;
     height: auto;
     text-align: center;
     align-items: center;
@@ -381,7 +380,7 @@ details[open] > summary ~ * {
         height: 100%;
     }
     .card img{
-        width: 100%;
+        width: 50%;
         height: 50%;
     }
     .description{

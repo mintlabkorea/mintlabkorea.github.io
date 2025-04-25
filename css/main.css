@@ -423,11 +423,10 @@ details[open] > summary ~ * {
         height: 100%;
         flex-direction: column;
     }
-    /*
-    .card-section-side{
-        width:12%;
+    .home-map-upper{
+        height: 80%;
+        width: 100%;
     }
-    */
     .card{
         flex-direction:column;
         font-size: small;

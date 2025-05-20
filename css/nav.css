@@ -135,7 +135,7 @@
 .top-bar-side{
     position: fixed;
     right:0;
-    width:200px;
+    width:150px;
     /* height:fit-content; */
     /* padding: 20px; */
     top: var(--height);
@@ -162,8 +162,8 @@
   .top-bar-side .dropdown .dropdown-content {
     position: absolute;
     top:0;
-    left: -200px;
-    width: 200px;
+    left: -150px;
+    width: 150px;
     background-color: white;
     z-index: 9999;
     display: none;
@@ -196,7 +196,7 @@
 @media (max-width: 768px) {
     .top-bar-side {
         right: 0; /* Keep it aligned to the right */
-        width: 200px; /* Restore original width */
+        width: 150px; /* Restore original width */
         text-align: center; /* Ensure text is centered */
     }
 

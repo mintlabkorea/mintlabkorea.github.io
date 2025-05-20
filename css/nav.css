@@ -162,8 +162,8 @@
   .top-bar-side .dropdown .dropdown-content {
     position: absolute;
     top:0;
-    left: -150px;
-    width: 150px;
+    left: -125px;
+    width: 125px;
     background-color: white;
     z-index: 9999;
     display: none;
@@ -196,7 +196,7 @@
 @media (max-width: 768px) {
     .top-bar-side {
         right: 0; /* Keep it aligned to the right */
-        width: 150px; /* Restore original width */
+        width: 125px; /* Restore original width */
         text-align: center; /* Ensure text is centered */
     }
 

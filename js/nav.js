@@ -16,57 +16,56 @@ function gapDetected() {
 }
 
 function resizeEvent() {
-    while (topBarNav.firstElementChild && gapDetected()) {
-        let item = topBarNav.firstElementChild;
-        let itemText = item.querySelector('a') ? item.querySelector('a').innerText.trim() : "";
+    while (topBarNav.lastElementChild && gapDetected()) {
+        let item = topBarNav.lastElementChild;
+        // let itemText = item.querySelector('a') ? item.querySelector('a').innerText.trim() : "";
+        // // Remove "Members" but keep "Professor" & "Students" in mobile
+        // if (window.innerWidth <= 768 && itemText === 'Members') {
+        //     let dropdownContent = item.querySelector('.dropdown-content'); // Get Professor & Students
 
-        // Remove "Members" but keep "Professor" & "Students" in mobile
-        if (window.innerWidth <= 768 && itemText === 'Members') {
-            let dropdownContent = item.querySelector('.dropdown-content'); // Get Professor & Students
-
-            if (dropdownContent) {
-                let subItems = dropdownContent.children;
-                for (let i = 0; i < subItems.length; i++) {
-                    let newItem = subItems[i].cloneNode(true);
-                    newItem.style.textAlign = "center"; // Ensure text is centered
-                    newItem.style.display = "block"; // Match other items
-                    newItem.style.padding = "12px 0"; // Keep consistent spacing
-                    topBarSide.appendChild(newItem);
-
-
-                }
-            }
-            item.remove(); // Remove "Members"
-            continue;
-        }
-        if (window.innerWidth <= 768 && itemText === 'Research') {
-            let dropdownContent = item.querySelector('.dropdown-content'); // Get Professor & Students
-
-            if (dropdownContent) {
-                let subItems = dropdownContent.children;
-                for (let i = 0; i < subItems.length; i++) {
-                    let newItem = subItems[i].cloneNode(true);
-                    newItem.style.textAlign = "center"; // Ensure text is centered
-                    newItem.style.display = "block"; // Match other items
-                    newItem.style.padding = "12px 0"; // Keep consistent spacing
-                    topBarSide.appendChild(newItem);
+        //     if (dropdownContent) {
+        //         let subItems = dropdownContent.children;
+        //         for (let i = 0; i < subItems.length; i++) {
+        //             let newItem = subItems[i].cloneNode(true);
+        //             newItem.style.textAlign = "center"; // Ensure text is centered
+        //             newItem.style.display = "block"; // Match other items
+        //             newItem.style.padding = "12px 0"; // Keep consistent spacing
+        //             topBarSide.appendChild(newItem);
 
 
-                }
-            }
-            item.remove(); // Remove "Members"
-            continue;
-        }
-        deletedItem.push(item);
-        deletedGap.push(item.offsetWidth);
-        topBarSide.appendChild(item);
+        //         }
+        //     }
+        //     item.remove(); // Remove "Members"
+        //     continue;
+        // }
+        // if (window.innerWidth <= 768 && itemText === 'Research') {
+        //     let dropdownContent = item.querySelector('.dropdown-content'); // Get Professor & Students
+
+        //     if (dropdownContent) {
+        //         let subItems = dropdownContent.children;
+        //         for (let i = 0; i < subItems.length; i++) {
+        //             let newItem = subItems[i].cloneNode(true);
+        //             newItem.style.textAlign = "center"; // Ensure text is centered
+        //             newItem.style.display = "block"; // Match other items
+        //             newItem.style.padding = "12px 0"; // Keep consistent spacing
+        //             topBarSide.appendChild(newItem);
+
+
+        //         }
+        //     }
+        //     item.remove(); // Remove "Members"
+        //     continue;
+        // }
+        deletedItem.unshift(item);
+        deletedGap.unshift(item.offsetWidth);
+        topBarSide.insertBefore(item,topBarSide.firstElementChild);
     }
 
     while (deletedItem.length > 0 && 
-           window.innerWidth - logo.offsetWidth - topBarNav.offsetWidth > navGap + gap + deletedGap[deletedGap.length - 1]) {
+           window.innerWidth - logo.offsetWidth - topBarNav.offsetWidth > navGap + gap + deletedGap[0]) {
         topBarNav.appendChild(topBarSide.firstElementChild);
-        deletedItem.pop();
-        deletedGap.pop();
+        deletedItem.shift();
+        deletedGap.shift();
     }
 
     if (deletedItem.length) {
@@ -133,3 +132,14 @@ topBarOption.addEventListener('click',()=>{
         handleTopBarSide(SHOWN_CLASSNAME, HIDDEN_CLASSNAME);
     }
 })
+
+document.addEventListener('click', (e) => {
+    if (!isMobile) return;
+
+    const clickedInsideSidebar = topBarSide.contains(e.target);
+    const clickedToggleButton = topBarOption.contains(e.target);
+
+    if (!clickedInsideSidebar && !clickedToggleButton && topBarSideOn) {
+        handleTopBarSide(HIDDEN_CLASSNAME, SHOWN_CLASSNAME);
+    }
+});

@@ -137,7 +137,7 @@
     right:0;
     width:200px;
     /* height:fit-content; */
-    padding: 20px;
+    /* padding: 20px; */
     top: var(--height);
     z-index: 2;
     
@@ -158,26 +158,24 @@
   'opsz' 24
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint if needed */
-    .top-bar-side .dropdown > a { 
-        display: none; /* Hide "Members" on mobile */
-    }
+@media (max-width: 768px) {
+  .top-bar-side .dropdown .dropdown-content {
+    position: absolute;
+    top:0;
+    left: -200px;
+    width: 200px;
+    background-color: white;
+    z-index: 9999;
+    display: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding: 10px 0;
+  }
 
-    .top-bar-side .dropdown-content {
-        display: block !important; /* Ensure sub-items are always visible */
-        position: relative; /* Remove dropdown hover effect */
-        background: none; /* Match background */
-        box-shadow: none; /* Remove unnecessary styles */
-    }
-
-    .top-bar-side .dropdown-content a {
-        padding: 10px 15px; /* Keep consistent padding */
-        display: block; /* Make them full-width */
-    }
-    .footer{
-        width:100%;
-    }
+  .top-bar-side .dropdown.active .dropdown-content {
+    display: block;
+  }
 }
+
 
 @media (max-width: 768px) {
     .top-bar-side a {

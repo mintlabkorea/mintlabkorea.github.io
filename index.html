@@ -35,41 +35,43 @@
                 <span>M</span>ovement <span>INT</span>elligence Laboratory
             </div>
             <div class="home-map-upper" style="flex-direction: column;">
-                <video autoplay muted loop playsinline>
+                <video autoplay muted loop>
                     <source src="/videos/Main.mp4" type="video/mp4"/>
                 </video>
             </div>
         </div>
+
         <div class="home-container" style="background-color:whitesmoke; flex-direction: column;">
-            <div class="home-title card-container-title"><span>R</span>esearch <span>T</span>opics</div>
-            <div class="home-map-container card-container">
-                <div class="card-section" style="flex-direction: row; display: inline-block; ">
-                        <div class="card">
-                            <img src="/images/home_right.png"onclick="location.href='/research/wearable'">
-                            <div class="description">
-                                <h2>Wearable Intelligence</h2>
-                                <br>Human Kinematics/Kinetics Estimation
-                                <br>Intention Detection
-                                <br>Exoskeletons
-                                <br>Wearable Sensors for Healthcare
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/images/home_left.png" onclick="location.href='/research/robotics'">
-                            <div class="description">
-                                <h2>Robot Intelligence</h2>
-                                <br>Robotic Manipulation
-                                <br>Multi-Agent Motion/Task Planning
-                                <br>3D Computer Vision
-                                <br>Autonomous Vehicles
-                            </div>
-                        </div>
-                    
+            <div class="home-title">
+                <span>R</span>esearch <span>T</span>opics
+            </div>
+
+            <div class="card-section">
+                <div class="card">
+                    <img src="/images/home_right.png"onclick="location.href='/research/wearable'">
+                    <div class="description">
+                        <h2>Wearable Intelligence</h2>
+                        <br>Human Pose Reconstruction with IMUs
+                        <br>Intention Detection
+                        <br>Exoskeleton Kinematics
+                        <br>Status Tacking with Wearable Sensors
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="/images/home_left.png" onclick="location.href='/research/robotics'">
+                    <div class="description">
+                        <h2>Robot Intelligence</h2>
+                        <br>Robotic Pick-and-Place
+                        <br>Multi-Agent Path/Task Planning
+                        <br>3D Reconstruction
+                        <br>Pocket Racer
+                    </div>
                 </div>
             </div>
         </div>
         <div id="footer"></div>
     </body>
     <script src="/js/main.js"></script>
-    <script src="/js/card.js"></script>
+    <!-- <script src="/js/card.js"></script> -->
 </html>

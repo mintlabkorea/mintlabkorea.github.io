@@ -5,7 +5,7 @@ This is the repository that contains source code for the [LLJKE website](https:/
 If you are to cite this,:
 ```
 @article{hur2025LLJKE,
-  author    = {Hur, Benjamin and Baek, Sunin and Inseung, Kang and Kim, Daekyum},
+  author    = {Hur, Benjamin and Baek, Sunin and Kang, Inseung and Kim, Daekyum},
   title     = {Learning Based Lower Limb Joint Kinematic Estimation Using Open Source IMU Data},
   journal   = {Scientific Reports},
   year      = {2025},

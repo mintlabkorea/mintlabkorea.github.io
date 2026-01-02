@@ -6,7 +6,7 @@ If you are to cite this,:
 ```
 @article{baek2026PrintExo,
   author    = {Baek, Sunin and Lee, Yuhyun and Hur, Benjamin and Cha, Eun Sang and Kim, Daekyum},
-  title     = {LPrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton for Accessible Locomotion Research},
+  title     = {PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton for Accessible Locomotion Research},
   conference   = {TBD},
   year      = {2026},
 }

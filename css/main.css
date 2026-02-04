@@ -2,12 +2,22 @@
     z-index: 0;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     /* border: 1px solid black; */
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     overflow-x: hidden;
-    height:100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+#footer {
     width: 100%;
 }
 
@@ -240,7 +250,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20%;
+    padding-bottom: 80px;
 }
 
 .footer {
@@ -320,14 +330,13 @@ body {
 
 
 .news-img{
-    height: 100%;
     width: 100%;
     overflow: hidden;
-    padding-left: 20%;
 }
 .news-img img{
-    height:60%;
-    width: 60%;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .news-participants{
     font-family: "Montserrat", sans-serif;
@@ -442,9 +451,10 @@ details[open] > summary ~ * {
 
 
 .members {
-  
-  flex-direction: row; /* instead of row or wrap */
-  gap: 4%;             /* some vertical spacing between people */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 equal columns */
+  gap: 20px;             /* spacing between cards */
+  width: 100%;
 }
 
 /* Make each “members-member” become a row: image on the left, text on the right */
@@ -455,25 +465,24 @@ details[open] > summary ~ * {
 }
 
 .member-container {
-
-  /* White background for the row */
-  background-color: #fff;  
-  display: inline-grid;               
-  align-items: center;         /* Vertically center image & text */
-  padding: 20px;               /* Space inside the “card” */
-  margin-bottom: 20px;         /* Space between different students */
-  width:24%;
+  /* White background for the card */
+  background-color: #fff;
+  display: flex;
   flex-direction: column;
+  padding: 20px;               /* Space inside the "card" */
 }
 .member-img {
-  width: 100%;       /* pick an image width you like */
+  width: 100%;       /* fill container width */
+  aspect-ratio: 3 / 4; /* square images */
   margin-bottom: 20px; /* gap between photo & text */
   flex-shrink: 0;     /* prevent shrinking if the window is narrow */
+  overflow: hidden;   /* hide any overflow from cropped images */
 }
 .member-img img {
-  width: 100%;        /* fill that 200px container */
-  height: auto;
-  object-fit: cover;  /* ensures nice cropping if needed */
+  width: 100%;        /* fill the container width */
+  height: 100%;       /* fill the container height */
+  object-fit: cover;  /* crop and fit image to container */
+  object-position: center top; /* focus on face area (top center) */
 }
 .member-info{
     font-family:"Montserrat", sans-serif;
@@ -618,21 +627,22 @@ details[open] > summary ~ * {
         width: 100%;
     }
     .member-container {
-        /* White background for the row */
-        background-color: #fff;  
-        display: inline-grid;               
-        align-items: center;         /* Vertically center image & text */
-        padding: 2%;               /* Space inside the “card” */
-        margin-bottom: 2%;         /* Space between different students */
-        width:45%;
+        background-color: #fff;
+        display: flex;
         flex-direction: column;
+        padding: 10px;
+    }
+    .member-img {
+        aspect-ratio: 3 / 4;  /* square images */
+    }
+    .members{
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 equal columns for tablet */
     }
     .members-img{
         width: 180px;
         height: 240px;
         margin: 0 auto;
         img{
-
             height: 240px;
         }
     }
@@ -642,7 +652,6 @@ details[open] > summary ~ * {
     .members-member{
         width: 160px;
         align-items: center;
-
     }
     .members-member-description{
         width: 175px;
@@ -658,12 +667,6 @@ details[open] > summary ~ * {
         img{
             height: 200px;
         }
-    }
-    .members{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
     .member-info{
         font-size: small;
@@ -756,15 +759,18 @@ details[open] > summary ~ * {
         }
     }
     .members{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 equal columns for mobile */
+        gap: 10px;
+    }
+    .member-img {
+        aspect-ratio: 3 / 4;  /* square images */
     }
     .member-img img {
-        width: 100%;        /* fill that 200px container */
-        height: auto;
-        object-fit: cover;  /* ensures nice cropping if needed */
+        width: 100%;        /* fill the container width */
+        height: 100%;       /* fill the container height */
+        object-fit: cover;  /* crop and fit image to container */
+        object-position: center top; /* focus on face area */
       }
     .member-info h2 {
         margin-top: 0;      /* remove default heading margin */
@@ -785,14 +791,10 @@ details[open] > summary ~ * {
         height:100%;
     }
     .member-container {
-        /* White background for the row */
-        background-color: #fff;  
-        display: inline-grid;               
-        align-items: center;         /* Vertically center image & text */
-        padding: 2%;               /* Space inside the “card” */
-        margin-bottom: 2%;         /* Space between different students */
-        width:45%;
+        background-color: #fff;
+        display: flex;
         flex-direction: column;
+        padding: 10px;
     }
     .description{
         line-height: 150%;

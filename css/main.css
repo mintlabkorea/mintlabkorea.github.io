@@ -225,10 +225,11 @@ body {
 }
 .home-title .color-journal{
     color: #857bc6;
-    font-weight: normal;
 }
 .home-title .color-conference{
     color: #c6857b;
+}
+.home-title-research-description b{
     font-weight: normal;
 }
 .home-title-research-description{

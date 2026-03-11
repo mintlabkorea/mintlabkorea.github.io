@@ -223,6 +223,14 @@ body {
         text-decoration: none;
     }
 }
+.home-title .color-journal{
+    color: #857bc6;
+    font-weight: normal;
+}
+.home-title .color-conference{
+    color: #c6857b;
+    font-weight: normal;
+}
 .home-title-research-description{
     width:100%;
     width: 70%;

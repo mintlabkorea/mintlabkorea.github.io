@@ -128,19 +128,34 @@
 .top-bar-side{
     position: fixed;
     right:0;
-    width:200px;
-    /* height:fit-content; */
-    /* padding: 20px; */
+    width: fit-content;
+    min-width: 120px;
+    padding: 10px 0;
     top: var(--height);
     z-index: 2;
-    
+
     display:flex;
     flex-direction: column;
-    gap:10px;
+    gap:0px;
     opacity: 1;
-    
+
     background-color: white;
     filter:drop-shadow(0 0 15px rgba(116, 116, 116, 0.272));
+}
+
+.top-bar-side a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: 'Bitter', serif;
+    text-align: center;
+}
+
+.top-bar-side a:hover {
+    color: #69aa70;
+    background-color: #f4f4f4;
 }
 
 .material-symbols-outlined {
@@ -151,57 +166,23 @@
   'opsz' 24
 }
 
-@media (max-width: 768px) {
-  .top-bar-side .dropdown .dropdown-content {
-    position: absolute;
-    top:0;
-    left: -200px;
-    width: 200px;
-    background-color: white;
-    z-index: 9999;
-    display: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    padding: 10px 0;
-  }
+.top-bar-side .dropdown .dropdown-content {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  left: auto;
+  width: fit-content;
+  min-width: 120px;
+  background-color: white;
+  z-index: 9999;
+  display: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+}
 
-  .top-bar-side .dropdown.active .dropdown-content {
-    display: block;
-  }
+.top-bar-side .dropdown:hover .dropdown-content,
+.top-bar-side .dropdown.active .dropdown-content {
+  display: block;
 }
 
 
-@media (max-width: 768px) {
-    .top-bar-side a {
-        display: block; /* Ensure all items appear in a similar block format */
-        padding: 10px 15px; /* Match the spacing of other menu items */
-        text-decoration: none; /* Remove underline */
-        color: black; /* Match other menu items */
-        font-size: 15px; /* Match the font size */
-        font-family: 'Bitter', serif; /* Apply same font */
-    }
-
-    .top-bar-side a:hover {
-        color: #69aa70; /* Ensure same hover effect */
-    }
-}
-
-
-@media (max-width: 768px) {
-    .top-bar-side {
-        right: 0; /* Keep it aligned to the right */
-        width: 200px; /* Restore original width */
-        text-align: center; /* Ensure text is centered */
-    }
-
-    .top-bar-side a {
-        display: block;
-        padding: 12px 0; /* Keep spacing */
-        text-align: center; /* Ensure text is centered */
-        font-size: 15px;
-        font-family: 'Bitter', serif;
-    }
-
-    .top-bar-side a:hover {
-        background-color: #f4f4f4; /* Hover effect */
-    }
-}

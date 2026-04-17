@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MINT LAB</title>
+        <link rel="icon" href="/favicon1.ico">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/nav.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=stat_minus_1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" /> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="/js/load.js"></script>
+        <script>
+    if (window.location.pathname.endsWith("index.html")) {
+        window.history.replaceState({}, document.title, window.location.pathname.replace("index.html", ""));
+    }
+        </script>
+    </head>
+    <body>
+        <div id="header"></div>
+ 
+        <div class="home-container">
+            <div class="home-title">
+                <span>M</span>ovement <span>INT</span>elligence Laboratory
+            </div>
+            <div class="home-map-upper" style="flex-direction: column;">
+                <video autoplay muted loop>
+                    <source src="/videos/Main.mp4" type="video/mp4"/>
+                </video>
+            </div>
+        </div>
+
+        <div class="home-container" style="background-color:whitesmoke; flex-direction: column;">
+            <div class="home-title">
+                <span>R</span>esearch <span>T</span>opics
+            </div>
+
+            <div class="card-section">
+                <div class="card">
+                    <img src="/images/home_right.png"onclick="location.href='/research/wearable'">
+                    <div class="description">
+                        <h2>Wearable Intelligence</h2>
+                        <br>AI Foundation Models for Medical Applications
+                        <br>Human Kinematics/Kinetics Estimation
+                        <br>Intention Detection
+                        <br>Exoskeletons and Wearable Robots
+                        <br>Wearable Sensors for Healthcare
+
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="/images/home_left.png" onclick="location.href='/research/robotics'">
+                    <div class="description">
+                        <h2>Robot Intelligence</h2>
+                        <br>Learning-based Manipulation and Locomotion
+                        <br>Multi-Agent Motion/Task Planning
+                        <br>3D Computer Vision
+                        <br>Autonomous Vehicles
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+    <script src="/js/main.js"></script>
+    <!-- <script src="/js/card.js"></script> -->
+</html>

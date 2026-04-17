@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton for Accessible Locomotion Research">
+  <meta name="keywords" content="Ankle Exoskeleton, Open-source Hardware, 3D Printing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton for Accessible Locomotion Research</title>
+
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://mintlabkorea.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://mintlabkorea.github.io/LLJKE">
+            Learning Based Lower Limb Joint Kinematic Estimation Using Open Source IMU Data
+          </a>
+          <a class="navbar-item" href="https://mintlabkorea.github.io/MUST">
+            MUST: Smartwatch-based Multimodal Framework for Predicting Driver State and Takeover Performance
+          </a>
+          <a class="navbar-item" href="https://mintlabkorea.github.io/PrintExo">
+            PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton Platform for Accessible Locomotion Research
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton Platform for Accessible Locomotion Research</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.daekyumkim.com/members/students">Sunin Baek</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.daekyumkim.com/members/students">Yuhyun Lee</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://neurobionics.robotics.umich.edu/people">Benjamin Hur</a><sup>1</sup>,</span>
+              <span class="author-block">
+              <a href="https://www.daekyumkim.com/members/research_professor">Eun Sang Cha</a><sup>1</sup></span><br>
+            <span class="author-block">
+              <a href="https://www.daekyumkim.com/members/professor">Daeykum Kim</a><sup>1,2</sup></span><br>
+          </div>
+
+          <div class="is-size-7 publication-authors">
+            <span class="author-block"><br><sup>1 </sup>Korea University, School of Mechanical Engineering,</span><br>
+            <span class="author-block"><sup>2 </sup>Korea University, School of Smart Mobility</span><br>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+
+              
+              
+
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./static/files/manuscript.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- arXiv
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              -->
+
+              <!-- Video Link. 
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              -->
+
+              <!-- GitHub Link. -->
+              <span class="link-block">
+                <a href="https://github.com/printexo"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                  </a>
+              </span>
+
+              
+              <span class="link-block">
+                <a href="https://printexo.github.io"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa-solid fa-code"></i>
+                  </span>
+                  <span>Project Page</span>
+                  </a>
+              </span>
+              
+
+
+              <!-- Dataset Link.
+              <span class="link-block">
+                <a href="https://github.com/mintlabkorea/Learning-Based-Lower-Limb-Joint-Kinematic-Estimation-Using-Open-Source-IMU-Data/tree/main/Data"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+              -->
+
+              <!-- Web Link. -->
+              <span class="link-block">
+                <a href="TBD"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-paperclip"></i>
+                  </span>
+                  <span>url</span>
+                </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cover Video
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/example.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf"> ~~~~~~
+      </h2>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- Cover Image -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/hero_printexo.png" alt="Teaser Image" style="width: 100%; height: auto;">
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Wearable ankle exoskeletons are a key testbed for assistive control and human-robot interaction during locomotion, but many systems remain difficult to build and deploy due to fabrication and fitting overhead (e.g., CNC/composite processes, long lead times, and shoe-specific interfaces). 
+We present PrintExo, an open-source, shoe-agnostic, fully 3D-printable ankle exoskeleton platform designed to lower the barrier to early-stage locomotion research and rapid prototyping. 
+PrintExo can be fabricated using consumer-grade FDM printing and standard off-the-shelf components, and integrates a compact 3D-printed 1:4 planetary gearbox for ankle assistance(total assembled mass: 1.33 kg per leg, excluding the user’s shoe). 
+A lace-anchored shoe interface transmits torque through commercially available lace-up footwear without permanent modification, enabling fast fitting across participants. 
+The device was evaluated in a pilot treadmill study with five able-bodied participants walking at 1.0 m/s under three conditions: no-device, zero-torque, and powered assistance, and was reused sequentially across participants.
+Across completed sessions, powered assistance reduced metabolic cost relative to zero-torque, and encoder-derived kinematics captured device-side ankle motion during torque application.
+Overall, PrintExo provides a practical, low-overhead, open-source platform for accessible ankle-exoskeleton prototyping and pilot locomotion experiments.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video.
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/{paper video link}"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    -->
+
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@unpublished{baek2026printexo,
+  author = {Baek, Sunin and Lee, Yuhyun and Hur, Benjamin and Cha, Eun Sang and Kim, Daekyum},
+  title  = {PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton for Accessible Locomotion Research},
+  note   = {Manuscript submitted to IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)},
+  year   = {2026}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://mintlabkorea.github.io/">
+         <i class="fas fa-home"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/mintlabkorea" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            © <script>document.write(new Date().getFullYear());</script> Movement Intelligence Laboratory, Korea University.  
+            Based on <a href="https://nerfies.github.io/" target="_blank">Nerfies</a>,  
+            licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

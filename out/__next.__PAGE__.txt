@@ -1,7 +1,0 @@
-1:"$Sreact.fragment"
-2:I[46179,["/MINTLAB/_next/static/chunks/0470dmk~8ji6q.js","/MINTLAB/_next/static/chunks/0d3shmwh5_nmn.js","/MINTLAB/_next/static/chunks/0ao8wfodalu~c.js"],"default"]
-3:I[43409,["/MINTLAB/_next/static/chunks/0470dmk~8ji6q.js","/MINTLAB/_next/static/chunks/0d3shmwh5_nmn.js","/MINTLAB/_next/static/chunks/0ao8wfodalu~c.js"],"default"]
-4:I[97367,["/MINTLAB/_next/static/chunks/0470dmk~8ji6q.js","/MINTLAB/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
-5:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","$L3",null,{}]],[["$","script","script-0",{"src":"/MINTLAB/_next/static/chunks/0ao8wfodalu~c.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"0oIYY6Z83lJHb0yacvsNR"}
-6:null

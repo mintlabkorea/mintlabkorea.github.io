@@ -1,1 +1,25 @@
+# OS
 .DS_Store
+
+# Dependencies
+node_modules/
+
+# Next.js build artifacts
+.next/
+# Note: out/ is currently tracked (216 files) — likely your deployment output.
+# Uncomment the next line only if you switch to CI-based deployment.
+# out/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env files
+.env*.local
+.env
+
+# Editor
+.vscode/
+.idea/

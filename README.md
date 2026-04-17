@@ -1,6 +1,4 @@
-# Physical AI Lab — Academic Website
-
-Production-quality academic website for a robotics/Physical AI professor, built with Next.js (App Router), TypeScript, Tailwind CSS, and Framer Motion.
+# Welcome to MINTLAB!
 
 ## Getting Started
 

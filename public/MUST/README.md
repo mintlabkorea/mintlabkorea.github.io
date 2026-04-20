@@ -5,18 +5,24 @@ This is the repository that contains source code for the [MUST website](https://
 If you are to cite this,:
 ```
 @inproceedings{10.1145/3772318.3791703,
-  author    = {Sheem, Seokyong and Cho, Yujin and In Kyung, Lee and Hanjun, Cho and Taegeun, Kim and Byung Hyung, Kim and Kim, Daekyum},
-  title     = {MUST: Smartwatch-based Multimodal Framework for Predicting Driver State and Takeover Performance},
-  isbn = {9798400722783},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/3772318.3791703},
-  doi = {10.1145/3772318.3791703},
-  abstract = {Ensuring timely takeover in conditionally autonomous vehicles presents a significant challenge, especially when drivers are distracted by non- driving-related tasks or are in suboptimal emotional states. Existing driver monitoring systems struggle with a trade-off between practicality and reliability. Physiological sensors are intrusive, vision-based methods are sensitive to occlusions and variable lighting, and current multimodal learning approaches often rely on simple fusion strategies that fail to reconcile heterogeneous data. We introduce MUST (Multimodal Unified Smartwatch-based Takeover), a framework that predicts driver state and takeover performance using unobtrusive smartwatch signals. MUST employs an asymmetric causal fusion mechanism to model the interplay between driver behavior and emotion. The performance of the architecture was validated in diverse simulator environments reflecting real-world driving conditions, demonstrating robust driver state estimation and takeover prediction. This work establishes the smartwatch as a practical tool for adaptive takeover support, enabling reliable readiness assessment without intrusive hardware or fragile vision systems.}
-  year     = {2026},
-  keywords = {Automated Driving, Takeover behavior, Smartwatch, Multimodal Fusion, Multi-task learning},
-  series = {CHI '26}
+author = {Sheem, Seokyong and Cho, Yujin and Lee, In Kyung and Cho, Hanjun and Kim, Taegeun and Kim, Byung Hyung and Kim, Daekyum},
+title = {MUST: Smartwatch-based Multimodal Framework for Predicting Driver State and Takeover Performance},
+year = {2026},
+isbn = {9798400722783},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3772318.3791703},
+doi = {10.1145/3772318.3791703},
+abstract = {Ensuring timely takeover in conditionally autonomous vehicles presents a significant challenge, especially when drivers are distracted by non-driving-related tasks or are in suboptimal emotional states. Existing driver monitoring systems struggle with a trade-off between practicality and reliability. Physiological sensors are intrusive, vision-based methods are sensitive to occlusions and variable lighting, and current multimodal learning approaches often rely on simple fusion strategies that fail to reconcile heterogeneous data. We introduce MUST (Multimodal Unified Smartwatch-based Takeover), a framework that predicts driver state and takeover performance using unobtrusive smartwatch signals. MUST employs an asymmetric causal fusion mechanism to model the interplay between driver behavior and emotion. The performance of the architecture was validated in diverse simulator environments reflecting real-world driving conditions, demonstrating robust driver state estimation and takeover prediction. This work establishes the smartwatch as a practical tool for adaptive takeover support, enabling reliable readiness assessment without intrusive hardware or fragile vision systems.},
+booktitle = {Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems},
+articleno = {1121},
+numpages = {17},
+keywords = {Automated Driving, Takeover behavior, Smartwatch, Multimodal Fusion, Multi-task learning},
+location = {
+},
+series = {CHI '26}
 }
+
 ```
 
 # Website License

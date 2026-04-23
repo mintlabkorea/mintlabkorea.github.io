@@ -18,6 +18,20 @@ export interface Publication {
 }
 
 export const publications: Publication[] = [
+  // ── 2026 Conferences ───────────────────────────────────────────────────────
+  {
+    id: "sheem-2026",
+    title: "MUST: Smartwatch-based Multimodal Framework for Predicting Driver State and Takeover Performance. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    authors: "Sheem, S., Cho, Y., Lee, I. K., Cho, H., Kim, T., Kim, B. H., & Kim, D.",
+    venue: "ACM CHI",
+    year: 2026,
+    featured: false,
+    type: "conference",
+    tags: ["Wearable", "Multimodal Sensing", "Activity Recognition"],
+    links: { paper: "https://dl.acm.org/doi/epdf/10.1145/3772318.3791703",
+             project: "/MUST/index.html",
+     },
+  },
   // ── 2025 Journals ──────────────────────────────────────────────────────────
   {
     id: "baker-2025",

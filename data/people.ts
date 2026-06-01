@@ -111,6 +111,25 @@ export const people: Person[] = [
       { title: "Research Engineer", institution: "Samsung Electronics Device Solutions", period: "2016–2020" },
     ],
   },
+  {
+    id: "junho-hong",
+    name: "Junho Hong",
+    role: "Postdoc",
+    keywords: ["Medical Surgical Robots", "Computer Vision", "Machine Learning"],
+    photo: "/images/PostdocJunhoHong.png",
+    hasProfile: true,
+    title: "Postdoctoral Research Fellow",
+    bio: "Junho Hong's research focuses on machine learning and computer vision for robotic and autonomous systems. His work includes medical surgical robotics and software-defined vehicles (SDVs). He brings industry experience from 42dot, a key SDV and autonomous driving technology organization within Hyundai Motor Group, as well as expertise in robotics, AI, and system integration.",
+    education: [
+      { degree: "Ph.D.", field: "Mechanical Engineering", institution: "Korea University", year: 2025 },
+      { degree: "M.S.", field: "Mechanical Engineering", institution: "Korea University", year: 2017 },
+      { degree: "B.S.", field: "Mechanical Engineering", institution: "Korea University", year: 2015 },
+    ],
+    experience: [
+      { title: "Postdoctoral Research Fellow", institution: "KAIST", period: "2026–Present" },
+      { title: "Senior Software Engineer", institution: "42dot", period: "2022–2026" },
+    ],
+  },
   // ── PhD Student ─────────────────────────────────────────────────────────────
   {
     id: "joonyoung-lee",

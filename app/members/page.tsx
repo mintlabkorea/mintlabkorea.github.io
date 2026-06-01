@@ -74,7 +74,7 @@ export default function MembersPage() {
                           {person.role}
                           {person.alumniNote && ` · ${person.alumniNote}`}
                         </p>
-                        {!person.hasProfile && (
+                        {person.role !== "Professor" && (
                           <div className="flex flex-wrap gap-1 mb-3">
                             {person.keywords.map((kw) => (
                               <Badge key={kw} className="text-[10px]">

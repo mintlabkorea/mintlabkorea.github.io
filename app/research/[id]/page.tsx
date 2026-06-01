@@ -22,8 +22,8 @@ const areaVideos: Record<string, VideoItem[]> = {
     { src: "/images/VLA.mp4", label: "Vision-Language-Action Model" },
     { src: "/images/PWD.mp4", label: "Reinforcement Learning for Dynamic Control" },
     { src: "/images/TactileDEMO.mp4", label: "Robotic Manipulation with Tactile Sensor" },
+    { src: "/images/RobotHand.mp4", label: "Dexterous Hand Manipulation" },
     { src: "/images/PocketRacer.mp4", label: "Autonomous Vehicles and Racing" },
-    
   ],
 };
 

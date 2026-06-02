@@ -123,7 +123,7 @@ export const people: Person[] = [
     education: [
       { degree: "Ph.D.", field: "Mechanical Engineering", institution: "Korea University", year: 2025 },
       { degree: "M.S.", field: "Mechanical Engineering", institution: "Korea University", year: 2017 },
-      { degree: "B.S.", field: "Mechanical Engineering", institution: "Korea University", year: 2015 },
+      { degree: "B.S.", field: "Civil, Environmental and Architectural Engineering", institution: "Korea University", year: 2015 },
     ],
     experience: [
       { title: "Postdoctoral Research Fellow", institution: "KAIST", period: "2026–Present" },

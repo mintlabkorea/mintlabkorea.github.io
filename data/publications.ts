@@ -20,6 +20,19 @@ export interface Publication {
 export const publications: Publication[] = [
   // ── 2026 Conferences ───────────────────────────────────────────────────────
   {
+    id: "cha-2026",
+    title: "Pocket Racer: An Accessible Autonomous Racing Educational Platform.",
+    authors: "Cha J., Choe J., Tsoy V., Chulajata K., Wu S., Laukien E., Hong D., Kim D.",
+    venue: "Scientific Reports",
+    year: 2026,
+    featured: false,
+    type: "journal",
+    tags: ["Machine Learning", "Autonomous Racing"],
+    links: {
+      paper: "https://www.nature.com/articles/s41598-026-49690-x"
+    }
+  },
+  {
     id: "sheem-2026",
     title: "MUST: Smartwatch-based Multimodal Framework for Predicting Driver State and Takeover Performance. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
     authors: "Sheem, S., Cho, Y., Lee, I. K., Cho, H., Kim, T., Kim, B. H., & Kim, D.",

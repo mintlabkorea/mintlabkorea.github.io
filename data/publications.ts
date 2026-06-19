@@ -22,7 +22,7 @@ export const publications: Publication[] = [
   {
     id: "cha-2026",
     title: "Pocket Racer: An Accessible Autonomous Racing Educational Platform.",
-    authors: "Cha J., Choe J., Tsoy V., Chulajata K., Wu S., Laukien E., Hong D., Kim D.",
+    authors: "Cha, J., Choe, J., Tsoy, V., Chulajata, K., Wu, S., Laukien, E., Hong, D., Kim, D.",
     venue: "Scientific Reports",
     year: 2026,
     featured: false,

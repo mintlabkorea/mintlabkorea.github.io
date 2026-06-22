@@ -20,6 +20,19 @@ export interface Publication {
 export const publications: Publication[] = [
   // ── 2026 Conferences ───────────────────────────────────────────────────────
   {
+    id: "kim-2026",
+    title: "TDSR-VLA: Transition-aware Denoising Sequence Representations for Vision-Language-Action.",
+    authors: "Kim, D., Song, K., Lee, S., Ju, H., Cha, E., Kim, D.",
+    venue: "ECCV(Accepted)",
+    year: 2026,
+    featured: false,
+    type: "conference",
+    tags: ["VLA", "Robotics"],
+    links: {
+      paper: ""
+    }
+  },
+  {
     id: "cha-2026",
     title: "Pocket Racer: An Accessible Autonomous Racing Educational Platform.",
     authors: "Cha, J., Choe, J., Tsoy, V., Chulajata, K., Wu, S., Laukien, E., Hong, D., Kim, D.",

@@ -29,7 +29,8 @@ export const publications: Publication[] = [
     type: "conference",
     tags: ["VLA", "Robotics"],
     links: {
-      paper: ""
+      paper: "/TDSR-VLA/paper/TDSR-VLA.pdf",
+      project: "/TDSR-VLA/index.html",
     }
   },
   {

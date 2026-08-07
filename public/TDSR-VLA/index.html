@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="TDSR-VLA: Transition-aware Denoising Sequence Representations for Vision-Language-Action." />
+    <meta name="keywords" content="TDSR-VLA, Vision-Language-Action, Robotics, Robot Learning, ECCV 2026" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TDSR-VLA | ECCV 2026" />
+    <meta property="og:description" content="Transition-aware Denoising Sequence Representations for Vision-Language-Action." />
+    <meta property="og:image" content="https://mintlab.korea.ac.kr/TDSR-VLA/assets/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://mintlab.korea.ac.kr/TDSR-VLA/assets/og.png" />
+    <title>TDSR-VLA: Transition-aware Denoising Sequence Representations for Vision-Language-Action</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/nerfies.css" />
+    <link rel="stylesheet" href="./static/css/tdsrvla.css" />
+    <link rel="icon" href="./static/images/favicon.svg" />
+  </head>
+  <body>
+    <section class="hero publication-header">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">TDSR-VLA: Transition-aware Denoising Sequence Representations for Vision-Language-Action</h1>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Dongwoo Kim<sup>1,*</sup>,</span>
+                <span class="author-block">Keunho Song<sup>1,*</sup>,</span>
+                <span class="author-block">Seungmin Lee<sup>1,*</sup>,</span>
+                <span class="author-block">Hwanhee Ju<sup>1</sup>,</span>
+                <span class="author-block">Eun Sang Cha<sup>1,†</sup>,</span>
+                <span class="author-block">Daekyum Kim<sup>1,2,†</sup></span>
+              </div>
+
+              <div class="is-size-5 publication-authors affiliation-line">
+                <span class="author-block"><sup>1</sup>Department of Mechanical Engineering, Korea University,</span>
+                <span class="author-block"><sup>2</sup>School of Smart Mobility, Korea University</span>
+              </div>
+              <p class="contribution-line"><sup>*</sup> Equal contribution. <sup>†</sup> Corresponding authors.</p>
+
+              <div class="column has-text-centered publication-links">
+                <span class="link-block"><a href="./paper/TDSR-VLA.pdf" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i></span><span>Paper</span></a></span>
+                <span class="link-block"><a href="#video" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fa-solid fa-circle-play" aria-hidden="true"></i></span><span>Video</span></a></span>
+                <span class="link-block"><a href="https://github.com/mintlabkorea/TDSR-VLA" target="_blank" rel="noreferrer" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fa-brands fa-github" aria-hidden="true"></i></span><span>GitHub</span></a></span>
+                <span class="link-block"><a href="./paper/TDSR-VLA-Supplementary.pdf" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></span><span>Supplementary</span></a></span>
+                <span class="link-block"><a href="./paper/TDSR-VLA-Poster.pdf" target="_blank" rel="noreferrer" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fa-solid fa-image" aria-hidden="true"></i></span><span>Poster</span></a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img class="teaser-image" src="./assets/images/tdsr-vla-overview.png" alt="TDSR-VLA architecture overview" />
+          <h2 class="subtitle has-text-centered"><span class="dnerf">TDSR-VLA</span> separates visual planning from action generation using transition-aware denoising representations.</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="hero is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop has-text-centered">
+          <h2 class="title is-3">TDSR-VLA Demo Video</h2>
+          <video class="demo-video" controls preload="metadata" poster="./assets/videos/TDSR-VLA-demo-poster.jpg">
+            <source src="./assets/videos/TDSR-VLA-demo-web.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Vision-Language-Action (VLA) policies often become brittle under deployment distribution shift when only limited target-domain demonstrations are available. Subgoal-image planning addresses this issue by providing an explicit visual target. However, the target image specifies what future scene to reach, not how the robot should transition toward it. We propose TDSR-VLA, a VLA framework that reuses conditioning states from a diffusion-based Vision Planner to guide action generation.
+              </p>
+              <p>
+                The Vision Planner predicts a subgoal image and provides a Sequence Representation (SR) grounded in the current observation and an Updated Sequence Representation (USR) refined during denoising steps. A flow-matching Action Expert generates continuous action chunks through layer-wise prefix key-value conditioning. On real-world OpenArm tasks, TDSR-VLA achieves an average score of 0.83, outperforming GR00T N1.5 (0.74), π<sub>0</sub> (0.71), and SmolVLA (0.58). On LIBERO, it reaches 82.0% on Goal and 56.0% on Long without robot-demonstration pretraining.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Method</h2>
+            <div class="content has-text-justified method-intro">
+              <p>
+                TDSR-VLA decouples <strong>visual planning</strong> from <strong>action execution</strong>. Instead of asking one policy to learn both what future state to reach and how to reach it from limited demonstrations, a diffusion-based Vision Planner first constructs a future-oriented plan. A flow-matching Action Expert then turns that plan into a smooth continuous action chunk.
+              </p>
+            </div>
+            <div class="method-steps">
+              <article class="method-step">
+                <span class="step-number">1</span>
+                <h3>Plan a reachable future</h3>
+                <p>A Stable Diffusion 3 Vision Planner takes the language instruction, robot state, and current camera view, then predicts a subgoal image representing a reachable scene at a fixed future horizon.</p>
+              </article>
+              <article class="method-step">
+                <span class="step-number">2</span>
+                <h3>Expose transition-aware cues</h3>
+                <p>During denoising, the planner retains two normally discarded hidden sequences: <strong>SR</strong> anchors control to the current observation, while <strong>USR</strong> captures plan-aligned transition information refined toward the subgoal.</p>
+              </article>
+              <article class="method-step">
+                <span class="step-number">3</span>
+                <h3>Generate continuous actions</h3>
+                <p>The Action Expert injects SR and current-view features into lower layers, and USR with subgoal-image features into upper layers. Conditional flow matching jointly produces a coordinated action chunk instead of predicting actions one by one.</p>
+              </article>
+            </div>
+            <div class="method-grid">
+              <figure><img src="./assets/images/vision-planner.png" alt="Diffusion-based Vision Planner" /><figcaption><strong>Vision Planner.</strong> Generates a subgoal image and extracts SR/USR from denoising-time hidden states.</figcaption></figure>
+              <figure><img src="./assets/images/action-expert.png" alt="Flow-matching Action Expert" /><figcaption><strong>Action Expert.</strong> Uses phase-specific prefix key-value conditioning to produce continuous action chunks.</figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Results</h2>
+            <div class="content has-text-justified results-intro">
+              <p>
+                Across simulation and real-world bimanual manipulation, TDSR-VLA shows its largest advantage on tasks that require long-horizon reasoning and tight coordination. The ablations further indicate that the gain comes from preserving the right balance between current-state grounding and subgoal guidance, rather than from the subgoal image alone.
+              </p>
+            </div>
+            <div class="result-highlights">
+              <article class="result-card">
+                <p class="result-value">0.83</p>
+                <h3>Best overall OpenArm score</h3>
+                <p>TDSR-VLA outperforms GR00T N1.5 (0.74), π<sub>0</sub> (0.71), and SmolVLA (0.58) across six real-world bimanual tasks. Its 95% bootstrap confidence interval is [0.767, 0.879].</p>
+              </article>
+              <article class="result-card">
+                <p class="result-value">0.88</p>
+                <h3>Strong object cooperation</h3>
+                <p>On object-cooperative tasks, TDSR-VLA reaches 0.88 versus 0.70 for the strongest baseline, a +0.18 gain that highlights more reliable coordination and handover behavior.</p>
+              </article>
+              <article class="result-card">
+                <p class="result-value">82 / 56</p>
+                <h3>LIBERO Goal / Long</h3>
+                <p>Without robot-demonstration pretraining, TDSR-VLA achieves 82.0% on LIBERO Goal and 56.0% on LIBERO Long, exceeding OpenVLA on both suites and π<sub>0</sub> on Long.</p>
+              </article>
+              <article class="result-card">
+                <p class="result-value">+0.13</p>
+                <h3>USR ablation gain</h3>
+                <p>Replacing SR with the denoising-refined USR in subgoal layers raises the OpenArm score from 0.70 to 0.83, supporting the value of plan-aligned transition cues.</p>
+              </article>
+            </div>
+            <div class="results-grid">
+              <figure><img src="./assets/images/openarm-results.png" alt="OpenArm main results" /><figcaption><strong>Real-world comparison.</strong> TDSR-VLA leads overall and shows the largest margin on object-cooperative tasks.</figcaption></figure>
+              <figure><img src="./assets/images/ablation-results.png" alt="OpenArm ablation results" /><figcaption><strong>Ablation study.</strong> A balanced subgoal-injection depth performs best, and USR improves the score from 0.70 to 0.83.</figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="bibtex">
+      <div class="container is-max-desktop content">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-centered">BibTeX</h2>
+            <pre><code>@inproceedings{kim2026tdsrvla,
+  title     = {TDSR-VLA: Transition-aware Denoising Sequence Representations for Vision-Language-Action},
+  author    = {Kim, Dongwoo and Song, Keunho and Lee, Seungmin and Ju, Hwanhee and Cha, Eun Sang and Kim, Daekyum},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2026}
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>© Movement Intelligence Laboratory, Korea University.</p>
+          <p>Based on <a href="https://nerfies.github.io/" target="_blank" rel="noreferrer">Nerfies</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a>.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

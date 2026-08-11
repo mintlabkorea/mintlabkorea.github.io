@@ -20,8 +20,21 @@ export interface Publication {
 export const publications: Publication[] = [
   // ── 2026 Conferences ───────────────────────────────────────────────────────
   {
+    id: "han&kim-2026",
+    title: "A Bioinspired, Multimodal Soft Tactile Skin with Task-Adaptive Perception for Intelligent Robotic Manipulation",
+    authors: "TBA, Kim, D.",
+    venue: "Advanced Science(Accepted)",
+    year: 2026,
+    featured: false,
+    type: "journal",
+    tags: ["Tactile Sensor", "Robotics"],
+    links: {
+      paper: "",
+    }
+  },
+  {
     id: "kim-2026",
-    title: "TDSR-VLA: Transition-aware Denoising Sequence Representations for Vision-Language-Action.",
+    title: "TDSR-VLA: Transition-aware Denoising Sequence Representations for Vision-Language-Action",
     authors: "Kim, D., Song, K., Lee, S., Ju, H., Cha, E., Kim, D.",
     venue: "ECCV(Accepted)",
     year: 2026,
@@ -35,7 +48,7 @@ export const publications: Publication[] = [
   },
   {
     id: "cha-2026",
-    title: "Pocket Racer: An Accessible Autonomous Racing Educational Platform.",
+    title: "Pocket Racer: An Accessible Autonomous Racing Educational Platform",
     authors: "Cha, J., Choe, J., Tsoy, V., Chulajata, K., Wu, S., Laukien, E., Hong, D., Kim, D.",
     venue: "Scientific Reports",
     year: 2026,

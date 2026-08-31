@@ -19,6 +19,14 @@ export interface NewsItem {
 
 export const newsItems: NewsItem[] = [
     {
+    id: "scholarships-2026",
+    date: "2026-09-01",
+    title: "Lab Member Receives 2026 Research Grants",
+    summary:
+      "Jungho Shin was selected for the Research Grant from National Research Foundation of Korea (NRF).",
+    tags: ["Award", "Scholarship"],
+  },
+    {
     id: "princessAnn-2026",
     date: "2026-07-15",
     title: "Princess Anne of the United Kingdom Visits MINT Lab",

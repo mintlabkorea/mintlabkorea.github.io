@@ -66,27 +66,6 @@ export const people: Person[] = [
       { title: "Postdoctoral Research Fellow", institution: "Harvard SEAS & Wyss Institute", period: "2021–2023" },
     ],
   },
-  {
-    id: "jesse-cha",
-    name: 'Eunsang "Jesse" Cha',
-    role: "Research Professor",
-    keywords: ["Machine Learning", "Computer Vision", "Robotics", "Autonomous Racing"],
-    photo: "/images/ResearchProfessorJesseCha.png",
-    hasProfile: true,
-    title: "Research Professor",
-    affiliations: [
-      "Institute of Advanced Machinery, Design & Technology, Korea University",
-    ],
-    bio: "Jesse Cha's research focuses on machine learning and computer vision for autonomous racing and robotics. He brings extensive experience in mechanical engineering and autonomous systems.",
-    education: [
-      { degree: "Ph.D.", field: "Mechanical Engineering", institution: "UCLA", year: 2020 },
-      { degree: "B.S.", field: "Mechanical Engineering", institution: "UCLA", year: 2015 },
-    ],
-    experience: [
-      { title: "Research Professor", institution: "Korea University", period: "2023–Present" },
-      { title: "Keck Endowed Postdoctoral Scholar", institution: "Pepperdine University", period: "2021–2023" },
-    ],
-  },
   // ── Postdoc ─────────────────────────────────────────────────────────────────
   {
     id: "hochang-lee",

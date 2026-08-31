@@ -18,6 +18,18 @@ export interface NewsItem {
 }
 
 export const newsItems: NewsItem[] = [
+    {
+    id: "princessAnn-2026",
+    date: "2026-07-15",
+    title: "Princess Anne of the United Kingdom Visits MINT Lab",
+    summary:
+      "We were honored to host Princess Anne of the United Kingdom at MINT Lab. During her visit, we showcased our research and engaged in discussion.",
+    tags: ["Lab Visit"],
+    images: ["/images/NewsAnn.jpg"],
+    links: [
+      { label: "Article", url: "https://www.yna.co.kr/view/AKR20260715128600004" },
+    ],
+  },
   {
     id: "yeosu-workshop-2025",
     date: "2025-12-22",

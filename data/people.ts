@@ -134,6 +134,20 @@ export const people: Person[] = [
     photo: "/images/IntegratedSuyeongLee.png",
   },
   {
+    id: "sunin-baek",
+    name: "Sunin Baek",
+    role: "Integrated MS/PhD",
+    keywords: ["Wearable & Healthcare"],
+    photo: "/images/MasterSuninBaek.jpg",
+  },
+    {
+    id: "jinhyun-kim",
+    name: "Jinhyun Kim",
+    role: "Integrated MS/PhD",
+    keywords: ["Robot Intelligence"],
+    photo: "/images/MasterJinhyunKim.jpg",
+  },
+  {
     id: "younghoon-bae",
     name: "Younghoon Bae",
     role: "Integrated MS/PhD",
@@ -190,21 +204,28 @@ export const people: Person[] = [
     keywords: ["Robot Intelligence"],
     photo: "/images/IntegratedSuhyeongPark.jpg",
   },
-  // ── MS Students ─────────────────────────────────────────────────────────────
   {
-    id: "sunin-baek",
-    name: "Sunin Baek",
-    role: "MS Student",
-    keywords: ["Wearable & Healthcare"],
-    photo: "/images/MasterSuninBaek.jpg",
-  },
-  {
-    id: "byeonggwan-kang",
-    name: "Byeonggwan Kang",
-    role: "MS Student",
+    id: "seungmin-yoo",
+    name: "Seungmin Yoo",
+    role: "Integrated MS/PhD",
     keywords: ["Robot Intelligence"],
-    photo: "/images/MasterByeonggwanKang.jpg",
+    photo: "/images/InternSeungminYoo.jpg",
   },
+    {
+    id: "seungmin-lee",
+    name: "Seungmin Lee",
+    role: "Integrated MS/PhD",
+    keywords: ["Robot Intelligence"],
+    photo: "/images/InternSeungminLee.jpg",
+  },
+    {
+    id: "yushin-cho",
+    name: "Yushin Cho",
+    role: "Integrated MS/PhD",
+    keywords: ["Wearable & Healthcare"],
+    photo: "/images/InternYushinCho.jpg",
+  },
+  // ── MS Students ─────────────────────────────────────────────────────────────
   {
     id: "jinho-choi",
     name: "Jinho Choi",
@@ -219,13 +240,6 @@ export const people: Person[] = [
     role: "MS Student",
     keywords: ["Wearable & Healthcare"],
     photo: "/images/MasterWoojinKwon.jpg",
-  },
-  {
-    id: "jinhyun-kim",
-    name: "Jinhyun Kim",
-    role: "MS Student",
-    keywords: ["Robot Intelligence"],
-    photo: "/images/MasterJinhyunKim.jpg",
   },
   {
     id: "hyeonjin-choi",
@@ -262,11 +276,10 @@ export const people: Person[] = [
     keywords: ["Robot Intelligence"],
     photo: "/images/MasterSeongjinBang.jpg",
   },
-  // ── Undergraduate Interns ───────────────────────────────────────────────────
   {
     id: "yujin-cho",
     name: "Yujin Cho",
-    role: "Undergraduate",
+    role: "MS Student",
     keywords: ["Robot Intelligence"],
     photo: "/images/InternYujinCho.jpg",
 
@@ -274,24 +287,25 @@ export const people: Person[] = [
   {
     id: "jimin-yun",
     name: "Jimin Yun",
-    role: "Undergraduate",
+    role: "MS Student",
     keywords: ["Robot Intelligence"],
     photo: "/images/InternJiminYun.jpg",
   },
   {
     id: "minseok-kim",
     name: "Minseok Kim",
-    role: "Undergraduate",
+    role: "MS Student",
     keywords: ["Robot Intelligence"],
     photo: "/images/InternMinseokKim.jpg",
   },
   {
     id: "yelin-heo",
     name: "Yelin Heo",
-    role: "Undergraduate",
+    role: "MS Student",
     keywords: ["Robot Intelligence"],
     photo: "/images/InternYelinHeo.jpg",
   },
+  // ── Undergraduate Interns ───────────────────────────────────────────────────
   {
     id: "minji-kim",
     name: "Minji Kim",
@@ -300,26 +314,11 @@ export const people: Person[] = [
     photo: "/images/InternMinjiKim.jpg",
   },
   {
-    id: "seungmin-yoo",
-    name: "Seungmin Yoo",
-    role: "Undergraduate",
-    keywords: ["Robot Intelligence"],
-    photo: "/images/InternSeungminYoo.jpg",
-  },
-  {
     id: "dongnyeom-je",
     name: "Dongnyeom Je",
     role: "Undergraduate",
     keywords: ["Wearable & Healthcare"],
     photo: "/images/InternDongnyeomJe.png",
-
-  },
-  {
-    id: "seungmin-lee",
-    name: "Seungmin Lee",
-    role: "Undergraduate",
-    keywords: ["Robot Intelligence"],
-    photo: "/images/InternSeungminLee.jpg",
   },
   {
     id: "junhyeok-seo",
@@ -344,13 +343,6 @@ export const people: Person[] = [
     photo: "/images/InternDongminJo.jpg",
   },
   {
-    id: "yushin-cho",
-    name: "Yushin Cho",
-    role: "Undergraduate",
-    keywords: ["Wearable & Healthcare"],
-    photo: "/images/InternYushinCho.jpg",
-  },
-  {
     id: "chanhyeok-lee",
     name: "Chanhyeok Lee",
     role: "Undergraduate",
@@ -365,5 +357,17 @@ export const people: Person[] = [
     role: "Alumni",
     keywords: ["Wearable & Healthcare"],
     alumniNote: "Graduate Intern",
+  },
+  {
+    id: "byeonggwan-kang",
+    name: "Byeonggwan Kang",
+    role: "Alumni",
+    keywords: ["Robot Intelligence"],
+  },
+  {
+    id: "jesse-cha",
+    name: "Jesse Cha",
+    role: "Alumni",
+    keywords: ["Robot Intelligence","Autonomous Racing"],
   },
 ];

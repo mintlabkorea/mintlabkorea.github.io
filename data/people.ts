@@ -321,13 +321,6 @@ export const people: Person[] = [
     photo: "/images/InternDongnyeomJe.png",
   },
   {
-    id: "junhyeok-seo",
-    name: "Junhyeok Seo",
-    role: "Undergraduate",
-    keywords: ["Wearable & Healthcare"],
-    photo: "/images/InternJunhyeokSeo.jpg",
-  },
-  {
     id: "hwanhee-ju",
     name: "Hwanhee Ju",
     role: "Undergraduate",
@@ -363,11 +356,13 @@ export const people: Person[] = [
     name: "Byeonggwan Kang",
     role: "Alumni",
     keywords: ["Robot Intelligence"],
+    alumniNote: "Graduate Student",
   },
   {
     id: "jesse-cha",
     name: "Jesse Cha",
     role: "Alumni",
     keywords: ["Robot Intelligence","Autonomous Racing"],
+    alumniNote: "Research Professor",
   },
 ];

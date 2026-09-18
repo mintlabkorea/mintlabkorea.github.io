@@ -311,9 +311,9 @@ export const publications: Publication[] = [
   // ── Conference Papers ───────────────────────────────────────────────────────
   {
     id: "kim-2026",
-    title: "TDSR-VLA: Transition-aware Denoising Sequence Representations for Vision-Language-Action",
+    title: "TDSR-VLA: Transition-Aware Denoising Sequence Representations for Vision-Language-Action",
     authors: "Kim, D., Song, K., Lee, S., Ju, H., Cha, E., Kim, D.",
-    venue: "ECCV(Accepted)",
+    venue: "European Conference on Computer Vision (ECCV)",
     year: 2026,
     date: "2026-09-08",
     featured: false,
@@ -339,9 +339,9 @@ export const publications: Publication[] = [
   },
   {
     id: "sheem-2026",
-    title: "MUST: Smartwatch-based Multimodal Framework for Predicting Driver State and Takeover Performance. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    title: "MUST: Smartwatch-based Multimodal Framework for Predicting Driver State and Takeover Performance",
     authors: "Sheem, S., Cho, Y., Lee, I. K., Cho, H., Kim, T., Kim, B. H., & Kim, D.",
-    venue: "ACM CHI",
+    venue: "ACM CHI Conference on Human Factors in Computing Systems (CHI)",
     year: 2026,
     date: "2026-04-13",
     featured: false,
@@ -353,7 +353,7 @@ export const publications: Publication[] = [
   },
   {
     id: "gionfrida-2024-biorob",
-    title: "Muscle architecture parameters inferred from simulated single element ultrasound traces.",
+    title: "Muscle Architecture Parameters Inferred from Simulated Single-Element Ultrasound Traces",
     authors: "Gionfrida, L.*, Kim, D.*, Jin, Y.*, Walsh, C.J., Howe, R.D.",
     venue: "IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)",
     year: 2024,
@@ -365,9 +365,9 @@ export const publications: Publication[] = [
   },
   {
     id: "bergamo-2023-icorr",
-    title: "Individualized Learning-based Ground Reaction Force Estimation in People Post-Stroke Using Pressure Insoles.",
+    title: "Individualized Learning-Based Ground Reaction Force Estimation in People Post-Stroke Using Pressure Insoles",
     authors: "Bergamo, G.*, Swaminathan, K.*, Kim, D.*, et al.",
-    venue: "IEEE RAS/EMBS International Conference on Rehabilitation Robotics (ICORR)",
+    venue: "International Conference on Rehabilitation Robotics (ICORR)",
     year: 2023,
     featured: false,
     type: "conference",
@@ -376,7 +376,7 @@ export const publications: Publication[] = [
   },
   {
     id: "song-2020-icra",
-    title: "Active 3D modeling via online multi-view stereo.",
+    title: "Active 3D Modeling via Online Multi-View Stereo",
     authors: "Song, S., Kim, D., Jo, S.",
     venue: "IEEE International Conference on Robotics and Automation (ICRA)",
     year: 2020,

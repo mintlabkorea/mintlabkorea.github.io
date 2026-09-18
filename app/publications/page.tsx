@@ -6,7 +6,7 @@ import { FileText, Code2, Video, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Publications",
-  description: "Publications from the Physical AI Lab.",
+  description: "Publications from the MINT Lab.",
 };
 
 const years = [...new Set(publications.map((p) => p.year))].sort(
@@ -19,18 +19,24 @@ function PubCard({ pub }: { pub: (typeof publications)[0] }) {
       <h3 className="text-base font-semibold text-neutral-900 mb-1.5 leading-snug group-hover:text-[#2d6e3a] transition-colors">
         {pub.title}
       </h3>
+
       <p className="text-sm text-neutral-500 mb-1">{pub.authors}</p>
+
       <p className="text-sm mb-1">
         <span className="font-medium text-[#2d6e3a]">{pub.venue}</span>
         <span className="text-neutral-400"> · {pub.year}</span>
-        {pub.note && <span className="text-neutral-400 italic"> · {pub.note}</span>}
+        {pub.note && (
+          <span className="text-neutral-400 italic"> · {pub.note}</span>
+        )}
       </p>
+
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-3">
         <div className="flex flex-wrap gap-1.5">
           {pub.tags.map((tag) => (
             <Badge key={tag}>{tag}</Badge>
           ))}
         </div>
+
         <div className="flex items-center gap-4 ml-auto flex-wrap">
           {pub.links.paper && (
             <a
@@ -40,6 +46,7 @@ function PubCard({ pub }: { pub: (typeof publications)[0] }) {
               <FileText size={14} /> Paper
             </a>
           )}
+
           {pub.links.code && (
             <a
               href={pub.links.code}
@@ -48,6 +55,7 @@ function PubCard({ pub }: { pub: (typeof publications)[0] }) {
               <Code2 size={14} /> Code
             </a>
           )}
+
           {pub.links.video && (
             <a
               href={pub.links.video}
@@ -56,6 +64,7 @@ function PubCard({ pub }: { pub: (typeof publications)[0] }) {
               <Video size={14} /> Video
             </a>
           )}
+
           {pub.links.project && (
             <a
               href={pub.links.project}
@@ -64,6 +73,7 @@ function PubCard({ pub }: { pub: (typeof publications)[0] }) {
               <ExternalLink size={14} /> Project
             </a>
           )}
+
           {pub.links.media?.map((m) => (
             <a
               key={m.label}
@@ -83,20 +93,34 @@ export default function PublicationsPage() {
   return (
     <div className="pt-24 pb-8 px-6">
       <div className="max-w-[68.5rem] mx-auto">
-        <SectionHeader
-          label="Publications"
-          title="Publications"
-        />
+        <SectionHeader label="Publications" title="Publications" />
 
         {years.map((year) => {
           const yearPubs = publications.filter((p) => p.year === year);
+
+          const datedPubs = yearPubs
+            .filter((p) => p.date)
+            .sort((a, b) => b.date!.localeCompare(a.date!));
+
+          let datedIndex = 0;
+
+          const sortedYearPubs = yearPubs.map((pub) => {
+            if (!pub.date) {
+              return pub;
+            }
+
+            const sortedPub = datedPubs[datedIndex++];
+            return sortedPub ?? pub;
+          });
+
           return (
             <div key={year} className="mb-12">
               <h2 className="text-xs font-semibold uppercase tracking-widest text-neutral-400 mb-6 pb-3 border-b border-neutral-100">
                 {year}
               </h2>
+
               <div className="space-y-4">
-                {yearPubs.map((pub) => (
+                {sortedYearPubs.map((pub) => (
                   <PubCard key={pub.id} pub={pub} />
                 ))}
               </div>

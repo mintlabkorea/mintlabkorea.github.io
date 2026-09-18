@@ -328,7 +328,7 @@ export const publications: Publication[] = [
     year: 2026,
     featured: false,
     type: "conference",
-    tags: ["Wearable Robots", "Exoskeletons", "Open-source],
+    tags: ["Wearable Robots", "Exoskeletons", "Open-source"],
     links: { paper: "https://ieeexplore.ieee.org/document/11681576" },
     note: "Oral Presentation",
   },

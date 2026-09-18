@@ -33,20 +33,6 @@ export const publications: Publication[] = [
     }
   },
   {
-    id: "kim-2026",
-    title: "TDSR-VLA: Transition-aware Denoising Sequence Representations for Vision-Language-Action",
-    authors: "Kim, D., Song, K., Lee, S., Ju, H., Cha, E., Kim, D.",
-    venue: "ECCV(Accepted)",
-    year: 2026,
-    featured: false,
-    type: "conference",
-    tags: ["VLA", "Robotics"],
-    links: {
-      paper: "/TDSR-VLA/paper/TDSR-VLA.pdf",
-      project: "/TDSR-VLA/index.html",
-    }
-  },
-  {
     id: "cha-2026",
     title: "Pocket Racer: An Accessible Autonomous Racing Educational Platform",
     authors: "Cha, J., Choe, J., Tsoy, V., Chulajata, K., Wu, S., Laukien, E., Hong, D., Kim, D.",
@@ -58,19 +44,6 @@ export const publications: Publication[] = [
     links: {
       paper: "https://www.nature.com/articles/s41598-026-49690-x"
     }
-  },
-  {
-    id: "sheem-2026",
-    title: "MUST: Smartwatch-based Multimodal Framework for Predicting Driver State and Takeover Performance. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
-    authors: "Sheem, S., Cho, Y., Lee, I. K., Cho, H., Kim, T., Kim, B. H., & Kim, D.",
-    venue: "ACM CHI",
-    year: 2026,
-    featured: false,
-    type: "conference",
-    tags: ["Wearable", "Multimodal Sensing", "Activity Recognition"],
-    links: { paper: "https://dl.acm.org/doi/epdf/10.1145/3772318.3791703",
-             project: "/MUST/index.html",
-     },
   },
   // ── 2025 Journals ──────────────────────────────────────────────────────────
   {
@@ -320,7 +293,7 @@ export const publications: Publication[] = [
     year: 2019,
     featured: true,
     type: "journal",
-    tags: ["Wearable Robot", "Intention Detection", "Egocentric Vision"],
+    tags: ["Wearable Robots", "Intention Detection", "Egocentric Vision"],
     links: {
       paper: "https://www.science.org/doi/10.1126/scirobotics.aav2949",
       media: [
@@ -333,6 +306,45 @@ export const publications: Publication[] = [
     note: "*Equal contribution",
   },
   // ── Conference Papers ───────────────────────────────────────────────────────
+  {
+    id: "kim-2026",
+    title: "TDSR-VLA: Transition-aware Denoising Sequence Representations for Vision-Language-Action",
+    authors: "Kim, D., Song, K., Lee, S., Ju, H., Cha, E., Kim, D.",
+    venue: "ECCV(Accepted)",
+    year: 2026,
+    featured: false,
+    type: "conference",
+    tags: ["VLA", "Robotics"],
+    links: {
+      paper: "/TDSR-VLA/paper/TDSR-VLA.pdf",
+      project: "/TDSR-VLA/index.html",
+    }
+  },
+  {
+    id: "baek-2024-biorob",
+    title: "PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton Platform for Accessible Locomotion Research",
+    authors: "Baek, S., Lee, Y., Hur, B., Cha, J., Kim, D.",
+    venue: "IEEE-RAS-EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)",
+    year: 2026,
+    featured: false,
+    type: "conference",
+    tags: ["Wearable Robots", "Exoskeletons", "Open-source],
+    links: { paper: "https://ieeexplore.ieee.org/document/11681576" },
+    note: "Oral Presentation",
+  },
+  {
+    id: "sheem-2026",
+    title: "MUST: Smartwatch-based Multimodal Framework for Predicting Driver State and Takeover Performance. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    authors: "Sheem, S., Cho, Y., Lee, I. K., Cho, H., Kim, T., Kim, B. H., & Kim, D.",
+    venue: "ACM CHI",
+    year: 2026,
+    featured: false,
+    type: "conference",
+    tags: ["Wearable", "Multimodal Sensing", "Activity Recognition"],
+    links: { paper: "https://dl.acm.org/doi/epdf/10.1145/3772318.3791703",
+             project: "/MUST/index.html",
+     },
+  },
   {
     id: "gionfrida-2024-biorob",
     title: "Muscle architecture parameters inferred from simulated single element ultrasound traces.",

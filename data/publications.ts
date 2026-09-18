@@ -4,6 +4,7 @@ export interface Publication {
   authors: string;
   venue: string;
   year: number;
+  date?: string;
   featured: boolean;
   tags: string[];
   type: "journal" | "conference";
@@ -22,14 +23,15 @@ export const publications: Publication[] = [
   {
     id: "han&kim-2026",
     title: "A Bioinspired, Multimodal Soft Tactile Skin with Task-Adaptive Perception for Intelligent Robotic Manipulation",
-    authors: "TBA, Kim, D.",
-    venue: "Advanced Science(Accepted)",
+    authors: "Lee, Y., Kang, H., Woo, J.Y., Kim, D., Han, C.S.",
+    venue: "Advanced Science",
     year: 2026,
+    date: "2026-08-18",
     featured: false,
     type: "journal",
     tags: ["Tactile Sensor", "Robotics"],
     links: {
-      paper: "",
+      paper: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.77230",
     }
   },
   {
@@ -38,6 +40,7 @@ export const publications: Publication[] = [
     authors: "Cha, J., Choe, J., Tsoy, V., Chulajata, K., Wu, S., Laukien, E., Hong, D., Kim, D.",
     venue: "Scientific Reports",
     year: 2026,
+    date: "2026-04-29",
     featured: false,
     type: "journal",
     tags: ["Machine Learning", "Autonomous Racing"],
@@ -312,6 +315,7 @@ export const publications: Publication[] = [
     authors: "Kim, D., Song, K., Lee, S., Ju, H., Cha, E., Kim, D.",
     venue: "ECCV(Accepted)",
     year: 2026,
+    date: "2026-09-08",
     featured: false,
     type: "conference",
     tags: ["VLA", "Robotics"],
@@ -324,12 +328,13 @@ export const publications: Publication[] = [
     id: "baek-2024-biorob",
     title: "PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton Platform for Accessible Locomotion Research",
     authors: "Baek, S., Lee, Y., Hur, B., Cha, J., Kim, D.",
-    venue: "IEEE-RAS-EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)",
+    venue: "IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)",
     year: 2026,
+    date: "2026-08-01",
     featured: false,
     type: "conference",
     tags: ["Wearable Robots", "Exoskeletons", "Open-source"],
-    links: { paper: "https://ieeexplore.ieee.org/document/11681576" },
+    links: { paper: "https://ieeexplore.ieee.org/document/11681576",project: "https://printexo.github.io/", },
     note: "Oral Presentation",
   },
   {
@@ -338,6 +343,7 @@ export const publications: Publication[] = [
     authors: "Sheem, S., Cho, Y., Lee, I. K., Cho, H., Kim, T., Kim, B. H., & Kim, D.",
     venue: "ACM CHI",
     year: 2026,
+    date: "2026-04-13",
     featured: false,
     type: "conference",
     tags: ["Wearable", "Multimodal Sensing", "Activity Recognition"],
@@ -349,7 +355,7 @@ export const publications: Publication[] = [
     id: "gionfrida-2024-biorob",
     title: "Muscle architecture parameters inferred from simulated single element ultrasound traces.",
     authors: "Gionfrida, L.*, Kim, D.*, Jin, Y.*, Walsh, C.J., Howe, R.D.",
-    venue: "IEEE-RAS-EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)",
+    venue: "IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)",
     year: 2024,
     featured: false,
     type: "conference",
@@ -361,7 +367,7 @@ export const publications: Publication[] = [
     id: "bergamo-2023-icorr",
     title: "Individualized Learning-based Ground Reaction Force Estimation in People Post-Stroke Using Pressure Insoles.",
     authors: "Bergamo, G.*, Swaminathan, K.*, Kim, D.*, et al.",
-    venue: "IEEE-RAS-EMBS International Conference on Rehabilitation Robotics (ICORR)",
+    venue: "IEEE RAS/EMBS International Conference on Rehabilitation Robotics (ICORR)",
     year: 2023,
     featured: false,
     type: "conference",

@@ -320,7 +320,7 @@ export const publications: Publication[] = [
     type: "conference",
     tags: ["VLA", "Robotics"],
     links: {
-      paper: "/TDSR-VLA/paper/TDSR-VLA.pdf",
+      paper: "https://link.springer.com/chapter/10.1007/978-3-032-37013-6_27",
       project: "/TDSR-VLA/index.html",
     }
   },

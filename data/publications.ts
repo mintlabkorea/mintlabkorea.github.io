@@ -19,7 +19,23 @@ export interface Publication {
 }
 
 export const publications: Publication[] = [
-  // ── 2026 Conferences ───────────────────────────────────────────────────────
+  // ── 2026 Journals ───────────────────────────────────────────────────────
+  {
+    id: "baek-2026-CCPL",
+    title: "Context-Continuous Preference Learning for Exoskeleton Personalization",
+    authors: "Baek, S., Park, S.#, Kim, D.#",
+    venue: "arXiv",
+    year: 2026,
+    date: "2026-09-23",
+    featured: false,
+    type: "journal",
+    tags: ["Exoskeleton", "Human-rotot interaction", "Personalization", "Preference learning"],
+    links: {
+      paper: "https://arxiv.org/abs/2609.28427",
+      project: "/CCPL/index.html",
+    },
+    note: "#Correspondence",
+  },
   {
     id: "han&kim-2026",
     title: "A Bioinspired, Multimodal Soft Tactile Skin with Task-Adaptive Perception for Intelligent Robotic Manipulation",
@@ -325,7 +341,7 @@ export const publications: Publication[] = [
     }
   },
   {
-    id: "baek-2024-biorob",
+    id: "baek-2026-biorob",
     title: "PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton Platform for Accessible Locomotion Research",
     authors: "Baek, S., Lee, Y., Hur, B., Cha, J., Kim, D.",
     venue: "IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)",

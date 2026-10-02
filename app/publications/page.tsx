@@ -37,7 +37,7 @@ function PublicationEntry({ pub }: { pub: (typeof publications)[0] }) {
         <p>
           <span className="font-medium text-[#2d6e3a]">{pub.venue}</span>
           {pub.underReview && pub.status === "preprint" && (
-            <span className="text-neutral-500"> · Under review</span>
+            <span className="font-medium text-[#2d6e3a]"> · Under review</span>
           )}
           <span className="text-neutral-500"> · {pub.year}</span>
           {pub.note && (

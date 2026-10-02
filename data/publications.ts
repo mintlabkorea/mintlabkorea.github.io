@@ -154,7 +154,7 @@ export const publications: Publication[] = [
   {
     id: "baek-2026-CCPL",
     title: "Context-Continuous Preference Learning for Exoskeleton Personalization",
-    authors: "Baek, S., Park, S.#, Kim, D.#",
+    authors: "Baek, S., Park, S., Kim, D.",
     venue: "arXiv preprint",
     status: "preprint",
     underReview: true,
@@ -172,7 +172,6 @@ export const publications: Publication[] = [
       paper: "https://arxiv.org/abs/2609.28427",
       project: "/CCPL/index.html",
     },
-    note: "#Correspondence",
   },
   {
     id: "han&kim-2026",

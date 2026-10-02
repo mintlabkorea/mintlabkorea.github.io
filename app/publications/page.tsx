@@ -1,132 +1,130 @@
 import type { Metadata } from "next";
-import { publications } from "@/data/publications";
-import Badge from "@/components/ui/Badge";
-import SectionHeader from "@/components/ui/SectionHeader";
-import { FileText, Code2, Video, ExternalLink } from "lucide-react";
+import { publications, type Publication } from "@/data/publications";
+import PublicationTabs from "@/components/publications/PublicationTabs";
 
 export const metadata: Metadata = {
   title: "Publications",
   description: "Publications from the MINT Lab.",
 };
 
-const years = [...new Set(publications.map((p) => p.year))].sort(
-  (a, b) => b - a
-);
+function PublicationEntry({ pub }: { pub: (typeof publications)[0] }) {
+  const resources = [
+    ...(pub.status === "preprint" && pub.links.paper
+      ? [{ label: "arXiv", url: pub.links.paper }]
+      : []),
+    { label: "Code", url: pub.links.code },
+    { label: "Video", url: pub.links.video },
+    { label: "Project", url: pub.links.project },
+    ...(pub.links.media ?? []),
+  ].filter((resource) => resource.url);
 
-function PubCard({ pub }: { pub: (typeof publications)[0] }) {
   return (
-    <div className="p-5 border border-neutral-200 rounded-xl hover:border-neutral-300 transition-colors group">
-      <h3 className="text-base font-semibold text-neutral-900 mb-1.5 leading-snug group-hover:text-[#2d6e3a] transition-colors">
-        {pub.title}
-      </h3>
-
-      <p className="text-sm text-neutral-500 mb-1">{pub.authors}</p>
-
-      <p className="text-sm mb-1">
-        <span className="font-medium text-[#2d6e3a]">{pub.venue}</span>
-        <span className="text-neutral-400"> · {pub.year}</span>
-        {pub.note && (
-          <span className="text-neutral-400 italic"> · {pub.note}</span>
+    <article className="py-3">
+      <h3 className="text-[0.9375rem] sm:text-base font-semibold text-neutral-900 leading-snug">
+        {pub.links.paper ? (
+          <a
+            href={pub.links.paper}
+            className="hover:text-[#2d6e3a] hover:underline underline-offset-2 transition-colors"
+          >
+            {pub.title}
+          </a>
+        ) : (
+          pub.title
         )}
-      </p>
-
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-3">
-        <div className="flex flex-wrap gap-1.5">
-          {pub.tags.map((tag) => (
-            <Badge key={tag}>{tag}</Badge>
-          ))}
-        </div>
-
-        <div className="flex items-center gap-4 ml-auto flex-wrap">
-          {pub.links.paper && (
-            <a
-              href={pub.links.paper}
-              className="flex items-center gap-1 text-sm text-neutral-400 hover:text-[#2d6e3a] transition-colors"
-            >
-              <FileText size={14} /> Paper
-            </a>
+      </h3>
+      <p className="mt-1 text-[0.8125rem] sm:text-sm text-neutral-600 leading-relaxed">{pub.authors}</p>
+      <div className="mt-1 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-[0.8125rem] sm:text-sm leading-relaxed">
+        <p>
+          <span className="font-medium text-[#2d6e3a]">{pub.venue}</span>
+          {pub.underReview && pub.status === "preprint" && (
+            <span className="text-neutral-500"> · Under review</span>
           )}
-
-          {pub.links.code && (
-            <a
-              href={pub.links.code}
-              className="flex items-center gap-1 text-sm text-neutral-400 hover:text-[#2d6e3a] transition-colors"
-            >
-              <Code2 size={14} /> Code
-            </a>
+          <span className="text-neutral-500"> · {pub.year}</span>
+          {pub.note && (
+            <span className="text-neutral-500 italic"> · {pub.note}</span>
           )}
-
-          {pub.links.video && (
-            <a
-              href={pub.links.video}
-              className="flex items-center gap-1 text-sm text-neutral-400 hover:text-[#2d6e3a] transition-colors"
-            >
-              <Video size={14} /> Video
-            </a>
-          )}
-
-          {pub.links.project && (
-            <a
-              href={pub.links.project}
-              className="flex items-center gap-1 text-sm text-neutral-400 hover:text-[#2d6e3a] transition-colors"
-            >
-              <ExternalLink size={14} /> Project
-            </a>
-          )}
-
-          {pub.links.media?.map((m) => (
-            <a
-              key={m.label}
-              href={m.url}
-              className="flex items-center gap-1 text-sm text-neutral-400 hover:text-[#2d6e3a] transition-colors"
-            >
-              <ExternalLink size={14} /> {m.label}
-            </a>
-          ))}
-        </div>
+        </p>
+        {resources.length > 0 && (
+          <div className="flex w-full flex-wrap items-center gap-x-4 gap-y-1 md:w-auto">
+            {resources.map((resource) => (
+              <a
+                key={`${resource.label}-${resource.url}`}
+                href={resource.url}
+                className="inline-flex min-h-7 items-center text-[0.8125rem] sm:text-xs text-neutral-600 underline underline-offset-4 hover:text-[#2d6e3a] transition-colors"
+              >
+                {resource.label}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
-    </div>
+    </article>
   );
 }
 
+function PublicationList({ entries }: { entries: Publication[] }) {
+  const pending = [
+    ...entries.filter((pub) => pub.status === "preprint"),
+    ...entries.filter((pub) => pub.status === "submitted"),
+  ];
+  const published = entries.filter(
+    (pub) => pub.status !== "preprint" && pub.status !== "submitted"
+  );
+  const years = [...new Set(published.map((pub) => pub.year))].sort((a, b) => b - a);
+  const sections = [
+    ...(pending.length ? [{ label: "Preprints & Under Review", entries: pending }] : []),
+    ...years.map((year) => ({
+      label: String(year),
+      entries: published.filter((pub) => pub.year === year),
+    })),
+  ];
+
+  if (!entries.length) {
+    return <p className="py-6 text-sm text-neutral-500">No publications listed in this category yet.</p>;
+  }
+
+  return sections.map((section) => {
+    // Keep undated entries in their curated positions while ordering dated papers.
+    const dated = section.entries.filter((pub) => pub.date).sort(
+      (a, b) => b.date!.localeCompare(a.date!)
+    );
+    let datedIndex = 0;
+    const sorted = section.entries.map((pub) => pub.date ? dated[datedIndex++] : pub);
+    // Keep public preprints together above submitted-only manuscripts.
+    sorted.sort((a, b) => Number(a.status === "submitted") - Number(b.status === "submitted"));
+
+    return (
+      <section key={section.label} className="mb-8">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-[#2d6e3a] mb-1 pb-2 border-b border-neutral-100">
+          {section.label}
+        </h2>
+        <div className="divide-y divide-neutral-100">
+          {sorted.map((pub) => <PublicationEntry key={pub.id} pub={pub} />)}
+        </div>
+      </section>
+    );
+  });
+}
+
 export default function PublicationsPage() {
+  const isOther = (pub: Publication) =>
+    pub.group ? pub.group === "other" : pub.type === "workshop" || pub.type === "other";
+
   return (
-    <div className="pt-24 pb-8 px-6">
-      <div className="max-w-[68.5rem] mx-auto">
-        <SectionHeader label="Publications" title="Publications" />
-
-        {years.map((year) => {
-          const yearPubs = publications.filter((p) => p.year === year);
-
-          const datedPubs = yearPubs
-            .filter((p) => p.date)
-            .sort((a, b) => b.date!.localeCompare(a.date!));
-
-          let datedIndex = 0;
-
-          const sortedYearPubs = yearPubs.map((pub) => {
-            if (!pub.date) {
-              return pub;
-            }
-
-            const sortedPub = datedPubs[datedIndex++];
-            return sortedPub ?? pub;
-          });
-
-          return (
-            <div key={year} className="mb-12">
-              <h2 className="text-xs font-semibold uppercase tracking-widest text-neutral-400 mb-6 pb-3 border-b border-neutral-100">
-                {year}
-              </h2>
-
-              <div className="space-y-4">
-                {sortedYearPubs.map((pub) => (
-                  <PubCard key={pub.id} pub={pub} />
-                ))}
-              </div>
-            </div>
-          );
-        })}
+    <div className="pt-24 pb-8 px-5 sm:px-6">
+      <div className="max-w-[60rem] mx-auto">
+        <PublicationTabs tabs={[
+          {
+            id: "main",
+            label: "Journals & Major Conferences",
+            content: <PublicationList entries={publications.filter((pub) => !isOther(pub))} />,
+          },
+          {
+            id: "other",
+            label: "Other Publications",
+            content: <PublicationList entries={publications.filter(isOther)} />,
+          },
+        ]} />
       </div>
     </div>
   );

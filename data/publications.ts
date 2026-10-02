@@ -7,7 +7,11 @@ export interface Publication {
   date?: string;
   featured: boolean;
   tags: string[];
-  type: "journal" | "conference";
+  type: "journal" | "conference" | "workshop" | "other" | "manuscript";
+  status?: "published" | "preprint" | "submitted";
+  underReview?: boolean;
+  // Override the default journal/conference versus workshop/other tab grouping.
+  group?: "main" | "other";
   links: {
     paper?: string;
     project?: string;
@@ -19,12 +23,141 @@ export interface Publication {
 }
 
 export const publications: Publication[] = [
+  // Preprints and submitted manuscripts (submission years assumed to be 2026 for this draft).
+  {
+    id: "lee-2026-rae-ppg",
+    title: "RAE-PPG: Duration-Grounded Retain-and-Extend Pretraining for PPG Foundation Models",
+    authors: "Lee, S., Lee, H., Sheem, S., Kim, D.",
+    venue: "arXiv preprint",
+    status: "preprint",
+    underReview: true,
+    year: 2026,
+    date: "2026-09-29",
+    featured: false,
+    type: "manuscript",
+    group: "main",
+    tags: [],
+    links: {"paper": "https://arxiv.org/abs/2609.36794"},
+  },
+  {
+    id: "choi-2026-pdw",
+    title: "Passive-Dynamic-Walking-Inspired Dynamics Guidance for Energy-Efficient Humanoid Locomotion",
+    authors: "Choi, H., Kim, J., Kim, D.",
+    venue: "arXiv preprint",
+    status: "preprint",
+    underReview: true,
+    year: 2026,
+    date: "2026-09-28",
+    featured: false,
+    type: "manuscript",
+    group: "main",
+    tags: [],
+    links: {"paper": "https://arxiv.org/abs/2609.35935"},
+  },
+  {
+    id: "kim-2026-rogsw4rld",
+    title: "RoGSW4RLD: Feed-Forward 4D Gaussian Lifting for Robot World Model Rollouts",
+    authors: "Kim, J.H., Kim, M.Y., Song, S., Kim, D.",
+    venue: "arXiv preprint",
+    status: "preprint",
+    underReview: true,
+    year: 2026,
+    date: "2026-09-28",
+    featured: false,
+    type: "manuscript",
+    group: "main",
+    tags: [],
+    links: {"paper": "https://arxiv.org/abs/2609.35311"},
+  },
+  {
+    id: "sheem-2026-beyond-correctness",
+    title: "Beyond Correctness: Evaluating Semantic Knowledge in Cross-Table Transfer",
+    authors: "Sheem, S.*, Lee, H.*, Lee, S., Kim, D.#",
+    venue: "arXiv preprint",
+    status: "preprint",
+    underReview: true,
+    year: 2026,
+    date: "2026-09-28",
+    featured: false,
+    type: "manuscript",
+    group: "main",
+    tags: [],
+    links: {"paper": "https://arxiv.org/abs/2609.34098"},
+    note: "*Equal contribution; #Correspondence",
+  },
+  {
+    id: "hong-2026-endoscopic-angle",
+    title: "Marker-Assisted Full-Image Angle Estimation for Endoscopic Robots Under Occlusion",
+    authors: "Hong, J., Hong, D., Kim, D.",
+    venue: "Under review",
+    status: "submitted",
+    year: 2026,
+    featured: false,
+    type: "manuscript",
+    group: "main",
+    tags: [],
+    links: {},
+  },
+  {
+    id: "kwon-2026-collision-truncated",
+    title: "Collision-Truncated Progress for Team Success in Continuous-Space Multi-Agent Path Finding",
+    authors: "Kwon, Y., Kim, D.",
+    venue: "Under review",
+    status: "submitted",
+    year: 2026,
+    featured: false,
+    type: "manuscript",
+    group: "main",
+    tags: [],
+    links: {},
+  },
+  {
+    id: "kim-2026-endoscopist-ergonomics",
+    title: "Quantitative Ergonomic Assessment of Endoscopists Using Wearable Inertial Measurement Units and Optical Motion Capture",
+    authors: "Kim, S.H., Baek, S., Hur, B., Bae, Y., Lee, Y., Kim, D., Choi, H.S.",
+    venue: "Under review",
+    status: "submitted",
+    year: 2026,
+    featured: false,
+    type: "manuscript",
+    group: "main",
+    tags: [],
+    links: {},
+  },
+  {
+    id: "choi-2026-quantum-critic-ppo",
+    title: "A Hybrid Quantum-Classical Actor-Critic Design for On-Board Control: Quantum-Critic PPO",
+    authors: "Choi, H., Kim, J., Kim, D.",
+    venue: "Under review",
+    status: "submitted",
+    year: 2026,
+    featured: false,
+    type: "manuscript",
+    group: "main",
+    tags: [],
+    links: {},
+  },
+  {
+    id: "shin-2026-spheroid-sorting",
+    title: "Sim-to-Real Reinforcement-Learning Framework for Vision-Controlled Microfluidic Sorting of Spheroids",
+    authors: "Shin, J., Tsoy, V., Kwon, S., Galkina, M., Aung, H.L., Jeon, H., Kim, D., Kim, H.",
+    venue: "Under review",
+    status: "submitted",
+    year: 2026,
+    featured: false,
+    type: "manuscript",
+    group: "main",
+    tags: [],
+    links: {},
+  },
   // ── 2026 Journals ───────────────────────────────────────────────────────
   {
     id: "baek-2026-CCPL",
     title: "Context-Continuous Preference Learning for Exoskeleton Personalization",
     authors: "Baek, S., Park, S.#, Kim, D.#",
     venue: "arXiv preprint",
+    status: "preprint",
+    underReview: true,
     year: 2026,
     date: "2026-09-23",
     featured: false,
@@ -331,6 +464,18 @@ export const publications: Publication[] = [
   },
   // ── Conference Papers ───────────────────────────────────────────────────────
   {
+    id: "lee-2026-iccas",
+    title: "Real-time Obstacle Avoidance and Local Path Planning for People with Visual Impairments Using Monocular Depth Estimation and Occupancy Grid Mapping",
+    authors: "Lee, J., Yoon, I., Jeong, H., Kim, M., Kim, J.H., Kim, D.",
+    venue: "ICCAS 2026",
+    year: 2026,
+    featured: false,
+    type: "conference",
+    group: "other",
+    tags: ["Assistive Navigation", "Monocular Depth Estimation", "Path Planning"],
+    links: {},
+  },
+  {
     id: "kim-2026",
     title: "TDSR-VLA: Transition-Aware Denoising Sequence Representations for Vision-Language-Action",
     authors: "Kim, D., Song, K., Lee, S., Ju, H., Cha, E., Kim, D.",
@@ -347,6 +492,7 @@ export const publications: Publication[] = [
   },
   {
     id: "baek-2026-biorob",
+    group: "other",
     title: "PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton Platform for Accessible Locomotion Research",
     authors: "Baek, S., Lee, Y., Hur, B., Cha, J., Kim, D.",
     venue: "IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)",
@@ -374,6 +520,7 @@ export const publications: Publication[] = [
   },
   {
     id: "gionfrida-2024-biorob",
+    group: "other",
     title: "Muscle Architecture Parameters Inferred from Simulated Single-Element Ultrasound Traces",
     authors: "Gionfrida, L.*, Kim, D.*, Jin, Y.*, Walsh, C.J., Howe, R.D.",
     venue: "IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)",
@@ -386,6 +533,7 @@ export const publications: Publication[] = [
   },
   {
     id: "bergamo-2023-icorr",
+    group: "other",
     title: "Individualized Learning-Based Ground Reaction Force Estimation in People Post-Stroke Using Pressure Insoles",
     authors: "Bergamo, G.*, Swaminathan, K.*, Kim, D.*, et al.",
     venue: "International Conference on Rehabilitation Robotics (ICORR)",

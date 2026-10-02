@@ -19,6 +19,14 @@ interface Semester {
 
 const semesters: Semester[] = [
   {
+    label: "Fall 2026",
+    courses: [
+      { code: "MOBI104", title: "How Things Work" },
+      { code: "MOBI311", title: "Sensor Theory and Signal Processing I" },
+      { code: "MECH485", title: "Introduction to Intelligent Robotics" },
+    ],
+  },
+  {
     label: "Spring 2026",
     courses: [
       { code: "MOBI304", title: "Intelligent Mobility Systems (Artificial Intelligence)" },

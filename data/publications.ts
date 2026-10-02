@@ -72,7 +72,7 @@ export const publications: Publication[] = [
   {
     id: "sheem-2026-beyond-correctness",
     title: "Beyond Correctness: Evaluating Semantic Knowledge in Cross-Table Transfer",
-    authors: "Sheem, S.*, Lee, H.*, Lee, S., Kim, D.#",
+    authors: "Sheem, S., Lee, H., Lee, S., Kim, D.",
     venue: "arXiv preprint",
     status: "preprint",
     underReview: true,
@@ -83,7 +83,6 @@ export const publications: Publication[] = [
     group: "main",
     tags: [],
     links: {"paper": "https://arxiv.org/abs/2609.34098"},
-    note: "*Equal contribution; #Correspondence",
   },
   {
     id: "hong-2026-endoscopic-angle",
